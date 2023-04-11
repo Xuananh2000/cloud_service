@@ -1,0 +1,83 @@
+<div>
+    <div v-if="this.step === 1">
+        <el-row :gutter="20">
+            <el-col :span="3">
+                <div class="grid-content ep-bg-purple"/>
+                <div>
+                    <div>
+                        <el-dropdown>
+                        <span class="el-dropdown-link">
+                          Server chạy ứng dụng
+                            <el-icon class="el-icon--right"><arrow-down/></el-icon>
+                        </span>
+                            <template #dropdown>
+                                <el-dropdown-menu>
+                                    <el-dropdown-item>Ubuntu 2</el-dropdown-item>
+                                    <el-dropdown-item>Ubuntu 2</el-dropdown-item>
+                                    <el-dropdown-item>Ubuntu 2</el-dropdown-item>
+                                </el-dropdown-menu>
+                            </template>
+                        </el-dropdown>
+                    </div>
+                </div>
+            </el-col>
+            <el-col :span="3">
+                <div class="grid-content ep-bg-purple"/>
+                <div>
+                    <div>
+                        <el-dropdown>
+                        <span class="el-dropdown-link">
+                          Server chạy ứng dụng
+                            <el-icon class="el-icon--right"><arrow-down/></el-icon>
+                        </span>
+                            <template #dropdown>
+                                <el-dropdown-menu>
+                                    <el-dropdown-item>Ubuntu 2</el-dropdown-item>
+                                    <el-dropdown-item>Ubuntu 2</el-dropdown-item>
+                                    <el-dropdown-item>Ubuntu 2</el-dropdown-item>
+                                </el-dropdown-menu>
+                            </template>
+                        </el-dropdown>
+                    </div>
+                </div>
+            </el-col>
+            <el-col :span="3">
+                <div class="grid-content ep-bg-purple"/>
+                <div>
+                    <div>
+                        <el-dropdown>
+                        <span class="el-dropdown-link">
+                          Server chạy ứng dụng
+                            <el-icon class="el-icon--right"><arrow-down/></el-icon>
+                        </span>
+                            <template #dropdown>
+                                <el-dropdown-menu>
+                                    <el-dropdown-item>Ubuntu 2</el-dropdown-item>
+                                    <el-dropdown-item>Ubuntu 2</el-dropdown-item>
+                                    <el-dropdown-item>Ubuntu 2</el-dropdown-item>
+                                </el-dropdown-menu>
+                            </template>
+                        </el-dropdown>
+                    </div>
+                </div>
+            </el-col>
+        </el-row>
+    </div>
+    <div v-if="this.step === 2">
+        Step2
+        <el-button type="primary" @click="handleOnClickToRegister(3)" round>Đăng ký dịch vụ</el-button>
+    </div>
+    <div v-if="this.step === 3">
+        Step3
+        <el-button type="primary" @click="handleOnClickToRegister(4)" round>Đăng ký</el-button>
+    </div>
+    <div v-if="this.step === 4">
+        Bạn đã đăng ký thành công
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+    <div v-else-if="!this.step">
+        Loading...
+    </div>
+    <el-button v-if="this.step === 1" type="primary" @click="handleOnClickToModel" round>Cập nhật lại thông tin ứng dụng</el-button>
+    <el-button v-if="this.step === 1" type="primary" @click="handleOnClickToRegister(2)" round>Đăng ký dịch vụ</el-button>
+</div>

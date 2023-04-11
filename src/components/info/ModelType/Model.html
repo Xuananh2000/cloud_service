@@ -1,0 +1,59 @@
+<div>
+    <el-row :gutter="20">
+        <el-col :span="6">
+            <div class="grid-content ep-bg-purple"/>
+            <div>Loại hình ứng dụng
+                <div>
+                    <span>Ứng dụng web</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>Ứng dụng web sigle page</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>Ứng dụng web + API</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>Ứng dụng web + API + APP</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>Trang web tĩnh</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                </div>
+            </div>
+        </el-col>
+        <el-col :span="6">
+            <div class="grid-content ep-bg-purple"/>
+            <div>Quản lý mã nguồn
+                <div>
+                    <span>Git</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>Đặt Git ở Kaiyouit</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>Zip source code</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                </div>
+            </div>
+        </el-col>
+    </el-row>
+    <el-button type="primary" @click="handleOnClickToTech" round>Thông tin công nghệ</el-button>
+</div>

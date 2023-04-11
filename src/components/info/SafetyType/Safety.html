@@ -1,0 +1,33 @@
+<div>
+    <el-row :gutter="20">
+        <el-col :span="12">
+            <div class="grid-content ep-bg-purple"/>
+            <div>
+                <div>
+                    <span>SSL free</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>Dịch vụ SSL nâng cao</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>Backup tự động</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>Server thay thế khi có sự cố</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                </div>
+            </div>
+        </el-col>
+    </el-row>
+    <el-button type="primary" @click="handleOnClickToPerform" round>Hiệu suất</el-button>
+    <el-button type="primary" @click="handleOnClickToSolution" round>Thông tin giải pháp</el-button>
+</div>

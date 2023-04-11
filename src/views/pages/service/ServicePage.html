@@ -1,0 +1,12 @@
+<div>
+    <div v-if="this.curPage === 'Info'">
+        <Info/>
+    </div>
+    <div v-if="this.curPage === 'Solution'">
+        <Solution/>
+    </div>
+    <div v-if="this.curPage === 'Register'">
+        <Register/>
+    </div>
+    <div v-else-if="!this.curPage">Loading...</div>
+</div>

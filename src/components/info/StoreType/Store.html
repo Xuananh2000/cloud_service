@@ -1,0 +1,108 @@
+<div>
+    <el-row :gutter="20">
+        <el-col :span="3">
+            <div class="grid-content ep-bg-purple"/>
+            <div>Cơ sở dữ liệu
+                <div>
+                    <span>My SQL</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>My SQL</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>My SQL</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                </div>
+            </div>
+        </el-col>
+        <el-col :span="3">
+            <div class="grid-content ep-bg-purple"/>
+            <div>Media
+                <div>
+                    <span>Lưu tại server chạy ứng dụng</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>Lưu ở server tách biệt</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>Lưu trên S3</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                </div>
+            </div>
+        </el-col>
+        <el-col :span="3">
+            <div class="grid-content ep-bg-purple"/>
+            <div>Notification
+                <div>
+                    <span>Google push</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>Dịch vụ gửi mail SMTP</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>Dịch vụ gửi mail của Kaiyouit</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>Dịch vụ gửi mail của AWS</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                </div>
+            </div>
+        </el-col>
+    </el-row>
+    <el-row :gutter="20">
+        <el-col :span="3">
+            <div class="grid-content ep-bg-purple"/>
+            <div>
+                <div>
+                    <el-radio-group class="ml-4">
+                        <el-radio label="1" size="large">Đặt CSDL ở server chạy ứng dụng</el-radio>
+                        <el-radio label="2" size="large">Lưu ở server tách biệt</el-radio>
+                        <el-radio label="3" size="large">Cloud Satabase</el-radio>
+                    </el-radio-group>
+                </div>
+            </div>
+        </el-col>
+        <el-col :span="9">
+            <div class="grid-content ep-bg-purple"/>
+            <div>
+                <div>
+                    <span>Có sử dụng CDN</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>Backup tự động</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                </div>
+            </div>
+        </el-col>
+    </el-row>
+    <el-button type="primary" @click="handleOnClickToTech" round>Công nghệ</el-button>
+    <el-button type="primary" @click="handleOnClickToPerform" round>Thông tin hiệu suất</el-button>
+</div>

@@ -1,0 +1,24 @@
+<div>
+    <div v-if="this.curPage === 'ModelPath'">
+        <ModelPath @changePath="handleChangePath"/>
+    </div>
+    <div v-if="this.curPage === 'TechPath'">
+        <TechPath @changePath="handleChangePath"/>
+    </div>
+    <div v-if="this.curPage === 'StorePath'">
+        <StorePath @changePath="handleChangePath"/>
+    </div>
+    <div v-if="this.curPage === 'PerformPath'">
+        <PerformPath @changePath="handleChangePath"/>
+    </div>
+    <div v-if="this.curPage === 'SafetyPath'">
+        <SafetyPath @changePath="handleChangePath"/>
+    </div>
+    <div v-if="this.curPage === 'SolutionPath'">
+        <SolutionPath @changePath="handleChangePath"/>
+    </div>
+    <div v-if="this.curPage === 'UserPath'">
+        <UserPath @changePath="handleChangePath"/>
+    </div>
+    <div v-else-if="!this.curPage">Loading...</div>
+</div>

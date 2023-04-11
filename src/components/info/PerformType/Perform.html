@@ -1,0 +1,28 @@
+<div>
+    <el-row :gutter="20">
+        <el-col :span="12">
+            <div class="grid-content ep-bg-purple"/>
+            <div>
+                <div>
+                    <span>Cân bằng tải (áp dụng khi có nhiều server)</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>Tự động nâng cấu hình server khi có lương truy cập lớn (auto scaling)</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                    <span>AWS cloudfront</span>
+                    <el-switch
+                            v-model="this.test"
+                            size="large"
+                    />
+                </div>
+            </div>
+        </el-col>
+    </el-row>
+    <el-button type="primary" @click="handleOnClickToStore" round>Lưu trữ</el-button>
+    <el-button type="primary" @click="handleOnClickToSafety" round>Thông tin an toàn</el-button>
+</div>
