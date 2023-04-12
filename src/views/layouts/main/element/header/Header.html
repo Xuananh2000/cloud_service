@@ -1,6 +1,39 @@
-<div>
-    <button @click="handleClickToHome">Logo Nha</button>
-    <button @click="handleClickToService">Dịch vụ</button>
-    <button>Giới thiệu</button>
-    <button @click="handleClickToContact">Liên hệ</button>
+<div class="header">
+  <el-row class="header__container">
+    <el-col :span="4">
+      <div class="grid-content">
+        <button class="header__container--logo" @click="handleClickToHome"></button>
+      </div>
+    </el-col>
+    <el-col :span="2">
+      <div class="grid-content">
+        <span class="header__container--span" @click="handleClickToService">Dịch vụ</span>
+      </div>
+    </el-col>
+    <el-col :span="2">
+      <div class="grid-content">
+        <span class="header__container--span">Giới thiệu</span>
+      </div>
+    </el-col>
+    <el-col :span="13">
+      <div class="grid-content-customize">
+        <button id="phone-logo" class="header__container--media--customize"></button>
+        <span class="header__container--span--customize">VN: (+84) 1900 0000</span>
+        <span class="header__container--span--customize">JP: (+81) 1900 0000</span>
+      </div>
+    </el-col>
+    <el-col :span="1">
+      <div class="grid-content">
+        <button id="fb-logo" class="header__container--media"></button>
+        <button id="yt-logo" class="header__container--media"></button>
+      </div>
+    </el-col>
+    <el-col :span="2">
+      <div class="grid-content">
+        <button class="header__container--btn" @click="handleClickToContact">
+          <span class="btn--content">Liên hệ</span>
+        </button>
+      </div>
+    </el-col>
+  </el-row>
 </div>

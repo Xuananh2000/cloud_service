@@ -1,0 +1,25 @@
+.main-layout {
+  height: 100%;
+  width: 100%;
+  &__container {
+    height: 100%;
+    width: 100%;
+    &--header {
+      padding: 0;
+      height: 95px;
+      background: #FF1D0D;
+      top: 0;
+    ;
+    }
+
+    &--main {
+      padding: 0;
+      margin: 4em 14em;
+    }
+
+    &--footer {
+      padding: 0;
+      bottom: 0;
+    }
+  }
+}

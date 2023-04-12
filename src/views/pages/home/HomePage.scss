@@ -1,0 +1,12 @@
+.home {
+  height: 100%;
+  &--container {
+    height: 100%;
+    &--content {}
+    &--frame {
+      .frame-content {
+        background: url("../../../assets/img/Frame.png") no-repeat;
+      }
+    }
+  }
+}

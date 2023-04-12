@@ -1,21 +1,15 @@
 <div class="main-layout">
-    <div class="main-layout__container">
-        <!--  Header  -->
-        <div class="main-layout__container--header">
-            <Header/>
-        </div>
-
-        <!--  Main  -->
-        <div class="main-layout__container--main">
-            <div class="main-container">
-                <RouterView/>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <div class="main-layout__container--footer">
-            <Footer/>
-        </div>
-    </div>
-
+  <el-container class="main-layout__container">
+    <el-header class="main-layout__container--header">
+      <Header/>
+    </el-header>
+    <el-main class="main-layout__container--main">
+      <div class="main-container">
+        <RouterView/>
+      </div>
+    </el-main>
+    <el-footer class="main-layout__container--footer">
+      <Footer/>
+    </el-footer>
+  </el-container>
 </div>

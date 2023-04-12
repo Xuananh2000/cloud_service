@@ -30,9 +30,9 @@ import loadImage from './assets/logo.svg'
 app.use(VueLazyload, { loading: loadImage })
 
 // Boostrap
-import 'bootstrap/dist/css/bootstrap.css'
-import bootstrap from 'bootstrap/dist/css/bootstrap.css'
-app.use(bootstrap)
+// import 'bootstrap/dist/css/bootstrap.css'
+// import bootstrap from 'bootstrap/dist/css/bootstrap.css'
+// app.use(bootstrap)
 
 //Element UI
 import ElementPlus from 'element-plus'
