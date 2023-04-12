@@ -1,15 +1,58 @@
 <div class="home">
-  <el-row class="home__container">
-    <el-col class="home__container--info" :span="12">
-      <div class="info-content">
-        <span class="info-content">
-          <span>Kaiyouit Cloud</span>
-          Dịch vụ lưu trữ vận hành hệ thống web và ứng dụng</span>
-        <span class="info-content">Tìm hiểu thêm</span>
-      </div>
-    </el-col>
-    <el-col class="home__container--frame" :span="12">
-      <div class="frame-content"></div>
-    </el-col>
-  </el-row>
+    <div class="home__container">
+        <el-row class="home-content">
+            <el-col class="home-content--info" :span="12">
+                <div class="info__container">
+                    <div class="info__container-name">
+                        <span>Kaiyouit Cloud</span>
+                    </div>
+                    <div class="info__container-content">
+                        <span>Dịch vụ lưu trữ vận hành hệ thống web và ứng dụng</span>
+                    </div>
+                    <div class="info__container-more">
+                        <span>Tìm hiểu thêm</span>
+                    </div>
+                </div>
+            </el-col>
+            <el-col class="home-content--frame" :span="12">
+                <div class="frame__container"></div>
+            </el-col>
+        </el-row>
+        <el-row class="home-content">
+            <el-col class="home-content--question" :span="24">
+                <div class="question__container">
+                    <span>Bạn cần làm gì?</span>
+                </div>
+            </el-col>
+        </el-row>
+        <el-row class="home-content">
+            <el-col class="home-content--option" :span="8">
+                <div class="option__container">
+                    <div class="option__container--number"><span >01</span></div>
+                    <div class="option__container--text"><span>Thiết kế môi trường Deploy ứng dụng</span></div>
+                </div>
+            </el-col>
+            <el-col class="home-content--option" :span="8">
+                <div class="option__container">
+                    <div class="option__container--number"><span >02</span></div>
+                    <div class="option__container--text"><span>Deploy ứng dụng theo yêu cầu</span></div>
+                </div>
+            </el-col>
+            <el-col class="home-content--option" :span="8">
+                <div class="option__container">
+                    <div class="option__container--number"><span >03</span></div>
+                    <div class="option__container--text"><span>Deploy ứng dụng trên AWZ hoặc Azure</span></div>
+                </div>
+            </el-col>
+        </el-row>
+        <el-row class="home-content">
+            <el-col class="home-content--btn" :span="24">
+                <el-button class="btn--start">BẮT ĐÀU DỰ TÍNH CHI PHÍ</el-button>
+            </el-col>
+            <el-col class="home-content--btn" :span="24">
+                <el-button class="btn--another">Tôi cần một giải pháp khác</el-button>
+            </el-col>
+        </el-row>
+    </div>
 </div>
+

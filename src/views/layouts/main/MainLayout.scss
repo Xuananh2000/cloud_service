@@ -14,7 +14,9 @@
 
     &--main {
       padding: 0;
-      margin: 4em 14em;
+      .main-container {
+        padding: 4em 16em;
+      }
     }
 
     &--footer {

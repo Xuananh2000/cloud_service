@@ -1,3 +1,26 @@
-
+.main-layout {
+  height: 100%;
+  width: 100%;
+}
+.main-layout__container {
+  height: 100%;
+  width: 100%;
+}
+.main-layout__container--header {
+  padding: 0;
+  height: 95px;
+  background: #FF1D0D;
+  top: 0;
+}
+.main-layout__container--main {
+  padding: 0;
+}
+.main-layout__container--main .main-container {
+  padding: 4em 16em;
+}
+.main-layout__container--footer {
+  padding: 0;
+  bottom: 0;
+}
 
 /*# sourceMappingURL=MainLayout.css.map */

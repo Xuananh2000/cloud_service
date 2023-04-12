@@ -1,3 +1,108 @@
-
+.home__container .home-content {
+  font-family: "Inter Tight";
+  font-style: normal;
+}
+.home__container .home-content--info .info__container-name {
+  color: #FF212E;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+  letter-spacing: 0.05em;
+}
+.home__container .home-content--info .info__container-content {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 68px;
+  letter-spacing: 0.05em;
+  color: #262626;
+}
+.home__container .home-content--info .info__container-more {
+  margin: 1em 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-decoration-line: underline;
+  color: #FF1D0D;
+  cursor: pointer;
+}
+.home__container .home-content--frame .frame__container {
+  height: 36em;
+  background: url("../../../assets/img/Frame.png") no-repeat;
+}
+.home__container .home-content--question .question__container {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.05em;
+  color: #FF1D0D;
+  margin: 4em 0 2em 0;
+}
+.home__container .home-content--option {
+  margin: 0 0 4em 0;
+}
+.home__container .home-content--option .option__container {
+  height: 23em;
+  width: 25em;
+  background: url("../../../assets/img/Union1.png") no-repeat;
+  position: relative;
+}
+.home__container .home-content--option .option__container:hover {
+  background: url("../../../assets/img/Union2.png") no-repeat;
+}
+.home__container .home-content--option .option__container:hover .option__container--number {
+  color: #FFFFFF;
+}
+.home__container .home-content--option .option__container:hover .option__container--text {
+  color: #FFFFFF;
+  bottom: 48%;
+}
+.home__container .home-content--option .option__container--number {
+  width: 90%;
+  position: absolute;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #9F9F9F;
+  left: 8%;
+  top: 18%;
+}
+.home__container .home-content--option .option__container--text {
+  width: 90%;
+  position: absolute;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  color: #262626;
+  left: 8%;
+  bottom: 8%;
+}
+.home__container .home-content--btn {
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+}
+.home__container .home-content--btn .btn--start {
+  padding: 1em 2em;
+  width: 18em;
+  height: 3em;
+  background: #FF1D0D;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.home__container .home-content--btn .btn--another {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #262626;
+  border: none;
+}
 
 /*# sourceMappingURL=HomePage.css.map */
