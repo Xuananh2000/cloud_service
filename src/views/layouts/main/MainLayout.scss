@@ -7,21 +7,29 @@
     &--header {
       padding: 0;
       height: 95px;
-      background: #FF1D0D;
       top: 0;
-    ;
+      .header-container {
+        height: 100%;
+        background: #FF1D0D;
+      }
     }
 
     &--main {
       padding: 0;
       .main-container {
+        height: 100%;
         padding: 4em 16em;
       }
     }
 
     &--footer {
       padding: 0;
+      height: 583px;
+      position: relative;
       bottom: 0;
+      .footer-container {
+        height: 100%;
+      }
     }
   }
 }

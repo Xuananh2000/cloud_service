@@ -1,3 +1,86 @@
 <div class="footer">
-  <div class="footer__container">Footer</div>
+  <el-row class="footer__container">
+    <el-col :span="12" class="footer__container--left">
+      <el-row class="left_container">
+        <el-col :span="10" class="logo-col">
+          <div class="logo-col--img">
+            <img src="@/assets/img/Group.png" alt="logo">
+          </div>
+        </el-col>
+        <el-col :span="10" class="contact-col">
+          <div class="contact-col--content">
+            <span class="content-title">Liên hệ</span>
+          </div>
+          <div class="contact-col--content">
+            <span class="content-title">Trụ sở chính:</span>
+            <span class="content-text"> Số 16, ngách 97/168 Kim Giang, tổ 30, P.Đại Kim, Q.Hoàng Mai, Tp.Hà Nội.</span>
+          </div>
+          <div class="contact-col--content">
+            <span class="content-title">Văn phòng đại diện:</span>
+            <span class="content-text"> Tòa nhà Hoàng Ngọc, số 4, ngõ 82 Dịch Vọng Hậu, Cầu Giấy,Tp. Hà Nội.</span>
+          </div>
+          <div class="contact-col--content">
+            <span class="content-title">Tel:</span>
+            <span class="content-text"> +84 999 999 999</span>
+          </div>
+          <div class="contact-col--content">
+            <span class="content-title">Email:</span>
+            <span class="content-text"> kaiyouitcloud@gmail.com</span>
+          </div>
+        </el-col>
+      </el-row>
+      <el-row class="left_container">
+        <el-col :span="24" class="copy-right-col">
+          <div class="copy-right-text">
+            <span>© 2022 Bản quyền thuộc về Kaiyouit Cloud</span>
+          </div>
+        </el-col>
+      </el-row>
+    </el-col>
+    <el-col :span="12" class="footer__container--right">
+      <el-row class="right_container">
+        <el-col :span="10" class="info-col">
+          <div>
+            <span>Về Kaiyouit Cloud</span>
+          </div>
+          <div>
+            <span>Giới thiệu</span>
+          </div>
+          <div>
+            <span>Dịch vụ</span>
+          </div>
+          <div>
+            <span>Chính sách bảo mật</span>
+          </div>
+          <div>
+            <span>Điều khoản dịch vụ</span>
+          </div>
+        </el-col>
+        <el-col :span="10" class="form-col">
+          <div>
+            <span>Đăng ký email để nhận thông tin mới nhất</span>
+          </div>
+          <div>
+            <el-form>
+              <el-form-item label="">
+                <el-input placeholder="Họ và tên"/>
+              </el-form-item>
+              <el-form-item label="">
+                <el-input placeholder="Số điện thoại"/>
+              </el-form-item>
+              <el-form-item label="">
+                <el-input placeholder="Nhập email của bạn"/>
+              </el-form-item>
+              <el-form-item label="">
+                <el-input placeholder="Nhập nội dung"/>
+              </el-form-item>
+              <el-form-item>
+                <el-button @click="">Gửi ngay</el-button>
+              </el-form-item>
+            </el-form>
+          </div>
+        </el-col>
+      </el-row>
+    </el-col>
+  </el-row>
 </div>

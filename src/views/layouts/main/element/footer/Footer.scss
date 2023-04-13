@@ -1,7 +1,59 @@
 .footer {
   height: 100%;
+  background: #ECECEC;
+  font-family: 'Inter Tight';
+  font-style: normal;
   &__container {
     height: 100%;
-    background: #ECECEC;
+    margin: 0 16em;
+    padding: 4em 0;
+
+    &--left {
+      .left_container {
+        .logo-col {
+          &--img {
+            img {
+
+            }
+          }
+        }
+
+        .contact-col {
+          &--content {
+            padding: 1em 0;
+            .content-title {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.05em;
+                color: #262626;
+            }
+
+            .content-text {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 175.68%;
+              color: #262626;
+            }
+          }
+        }
+
+        .copy-right-col {
+          .copy-right-text {
+            span {}
+          }
+        }
+      }
+    }
+
+    &--right {
+      .right_container {
+        .info-col {
+        }
+
+        .form-col {
+        }
+      }
+    }
   }
 }

@@ -37,6 +37,7 @@ app.use(VueLazyload, { loading: loadImage })
 //Element UI
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+import 'element-plus/theme-chalk/display.css'
 app.use(ElementPlus)
 
 

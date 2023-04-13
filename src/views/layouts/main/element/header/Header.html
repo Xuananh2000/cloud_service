@@ -1,34 +1,59 @@
 <div class="header">
   <el-row class="header__container">
-    <el-col :span="4">
+    <el-col :span="5" :lg="5" :md="8" :sm="8" :xs="14">
       <div class="grid-content">
         <button class="header__container--logo" @click="handleClickToHome"></button>
       </div>
     </el-col>
-    <el-col :span="2">
+    <el-col :span="2" :lg="2" class="hidden-md-and-down">
       <div class="grid-content">
         <span class="header__container--span" @click="handleClickToService">Dịch vụ</span>
       </div>
     </el-col>
-    <el-col :span="2">
+    <el-col :span="2" :lg="2" class="hidden-md-and-down">
       <div class="grid-content">
         <span class="header__container--span">Giới thiệu</span>
       </div>
     </el-col>
-    <el-col :span="13">
+    <el-col :span="6" :md="4" :sm="4" :xs="2" class="hidden-lg-and-up">
+      <el-dropdown class="grid-content">
+        <el-button class="phone-logo header__container--media--customize">
+        </el-button>
+        <template #dropdown>
+          <el-dropdown-menu>
+            <el-dropdown-item>VN: (+84) 1900 0000</el-dropdown-item>
+            <el-dropdown-item>JP: (+81) 1900 0000</el-dropdown-item>
+          </el-dropdown-menu>
+        </template>
+      </el-dropdown>
+    </el-col>
+    <el-col :span="6" :md="6" :sm="6" :xs="4" class="hidden-lg-and-up">
+      <el-dropdown class="grid-content">
+        <button class="header__container--btn">
+          <span class="btn--content">Dịch vụ</span>
+        </button>
+        <template #dropdown>
+          <el-dropdown-menu>
+            <el-dropdown-item>Dịch vụ</el-dropdown-item>
+            <el-dropdown-item>Giới thiệu</el-dropdown-item>
+          </el-dropdown-menu>
+        </template>
+      </el-dropdown>
+    </el-col>
+    <el-col :span="10" class="hidden-md-and-down">
       <div class="grid-content-customize">
-        <button id="phone-logo" class="header__container--media--customize"></button>
+        <button class="phone-logo header__container--media--customize"></button>
         <span class="header__container--span--customize">VN: (+84) 1900 0000</span>
         <span class="header__container--span--customize">JP: (+81) 1900 0000</span>
       </div>
     </el-col>
-    <el-col :span="1">
+    <el-col :span="1" class="hidden-md-and-down">
       <div class="grid-content">
         <button id="fb-logo" class="header__container--media"></button>
         <button id="yt-logo" class="header__container--media"></button>
       </div>
     </el-col>
-    <el-col :span="2">
+    <el-col :span="4" :lg="4" :md="6" :sm="6" :xs="4">
       <div class="grid-content">
         <button class="header__container--btn" @click="handleClickToContact">
           <span class="btn--content">Liên hệ</span>
