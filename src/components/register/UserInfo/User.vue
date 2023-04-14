@@ -1,5 +1,5 @@
-<template src="./User.html"></template>
-<style scoped lang="scss" src="./User.scss"></style>
+<template src="User.html"></template>
+<style scoped lang="scss" src="User.scss"></style>
 
 <script>
 

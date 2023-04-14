@@ -49,11 +49,100 @@
     &--right {
       .right_container {
         .info-col {
+          &--content {
+            padding: 1em 0;
+            .content-title {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 19px;
+              letter-spacing: 0.05em;
+              color: #262626;
+            }
+
+            .content-text {
+              font-weight: 500;
+              font-size: 16px;
+              color: #262626;
+            }
+          }
         }
 
         .form-col {
+          &--content {
+            padding: 1em 0;
+            .form-title {
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 29px;
+              letter-spacing: 0.05em;
+              color: #262626;
+            }
+            .form-content {
+              width: 404px;
+              &--item {
+                .form-input {
+                  border-radius: 5px;
+                  height: 43px;
+                  position: relative;
+                }
+                .form-img {
+                  position: absolute;
+                  right: 1em;
+                }
+                .form-btn {
+                  height: 43px;
+                  background: #FF1D0D;
+                  border-radius: 5px;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 17px;
+                  letter-spacing: 0.05em;
+                  color: #FFFFFF;
+                  width: 100%;
+                }
+              }
+              &--item-customize {
+                ::v-deep(.el-input__wrapper) {
+                  align-items: unset;
+                  .el-input__inner {
+                  }
+                }
+                .form-input {
+                  height: 103px;
+                  border-radius: 5px;
+                  position: relative;
+                }
+                .form-img {
+                  position: absolute;
+                  right: 1em;
+                  top: 1em;
+                }
+              }
+            }
+          }
         }
       }
     }
   }
 }
+
+@media only screen and (max-width: 420px) {
+  .footer {
+    &__container {
+      margin: 0 0.5em;
+      &--right {
+        .right_container {
+          .form-col {
+            &--content {
+              .form-content {
+                width: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

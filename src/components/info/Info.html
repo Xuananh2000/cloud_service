@@ -1,24 +1,59 @@
-<div>
-    <div v-if="this.curPage === 'ModelPath'">
+<div class="info">
+  <div class="info__container">
+    <div class="info__container--stepper">
+      <div class="stepper--title"><span>Thông tin ứng dụng</span></div>
+      <div class="stepper--list">
+        <div @click="handleChangePath('ModelPath')" class="stepper--list-item">
+          <img v-if="this.curPage === 'ModelPath'" src="@/assets/img/step/1a.png" alt="step-icon">
+          <img v-else src="@/assets/img/step/1.png" alt="step-icon">
+        </div>
+        <div class="stepper--list-item">
+          <img src="@/assets/img/step/line.png" alt="line-icon">
+        </div>
+        <div @click="handleChangePath('TechPath')" class="stepper--list-item">
+          <img v-if="this.curPage === 'TechPath'" src="@/assets/img/step/2a.png" alt="step-icon">
+          <img v-else src="@/assets/img/step/2.png" alt="step-icon">
+        </div>
+        <div class="stepper--list-item">
+          <img src="@/assets/img/step/line.png" alt="line-icon">
+        </div>
+        <div @click="handleChangePath('StorePath')" class="stepper--list-item">
+          <img v-if="this.curPage === 'StorePath'" src="@/assets/img/step/3a.png" alt="step-icon">
+          <img v-else src="@/assets/img/step/3.png" alt="step-icon">
+        </div>
+        <div class="stepper--list-item">
+          <img src="@/assets/img/step/line.png" alt="line-icon">
+        </div>
+        <div @click="handleChangePath('PerformPath')" class="stepper--list-item">
+          <img v-if="this.curPage === 'PerformPath'" src="@/assets/img/step/4a.png" alt="step-icon">
+          <img v-else src="@/assets/img/step/4.png" alt="step-icon">
+        </div>
+        <div class="stepper--list-item">
+          <img src="@/assets/img/step/line.png" alt="line-icon">
+        </div>
+        <div @click="handleChangePath('SafetyPath')" class="stepper--list-item">
+          <img v-if="this.curPage === 'SafetyPath'" src="@/assets/img/step/5a.png" alt="step-icon">
+          <img v-else src="@/assets/img/step/5.png" alt="step-icon">
+        </div>
+      </div>
+    </div>
+    <div class="info__container--path">
+      <div v-if="this.curPage === 'ModelPath'">
         <ModelPath @changePath="handleChangePath"/>
-    </div>
-    <div v-if="this.curPage === 'TechPath'">
+      </div>
+      <div v-if="this.curPage === 'TechPath'">
         <TechPath @changePath="handleChangePath"/>
-    </div>
-    <div v-if="this.curPage === 'StorePath'">
+      </div>
+      <div v-if="this.curPage === 'StorePath'">
         <StorePath @changePath="handleChangePath"/>
-    </div>
-    <div v-if="this.curPage === 'PerformPath'">
+      </div>
+      <div v-if="this.curPage === 'PerformPath'">
         <PerformPath @changePath="handleChangePath"/>
-    </div>
-    <div v-if="this.curPage === 'SafetyPath'">
+      </div>
+      <div v-if="this.curPage === 'SafetyPath'">
         <SafetyPath @changePath="handleChangePath"/>
+      </div>
+      <div v-else-if="!this.curPage">Loading...</div>
     </div>
-    <div v-if="this.curPage === 'SolutionPath'">
-        <SolutionPath @changePath="handleChangePath"/>
-    </div>
-    <div v-if="this.curPage === 'UserPath'">
-        <UserPath @changePath="handleChangePath"/>
-    </div>
-    <div v-else-if="!this.curPage">Loading...</div>
+  </div>
 </div>

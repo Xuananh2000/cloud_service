@@ -11,7 +11,12 @@ export default {
   },
   data: function () {
     return {
-
+      form: {
+        name: '',
+        phone: '',
+        mail: '',
+        info: '',
+      },
     };
   },
   computed: {

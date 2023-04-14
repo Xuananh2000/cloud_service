@@ -1,5 +1,5 @@
-<template src="./Solution.html"></template>
-<style scoped lang="scss" src="./Solution.scss"></style>
+<template src="Solution.html"></template>
+<style scoped lang="scss" src="Solution.scss"></style>
 
 <script>
 

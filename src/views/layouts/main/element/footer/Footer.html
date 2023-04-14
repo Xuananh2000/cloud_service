@@ -1,13 +1,13 @@
 <div class="footer">
   <el-row class="footer__container">
-    <el-col :span="12" class="footer__container--left">
+    <el-col :span="12" :xl="12" :sm="24" :xs="24" class="footer__container--left">
       <el-row class="left_container">
-        <el-col :span="10" class="logo-col">
+        <el-col :span="10" :xl="10" :sm="24" :xs="24" class="logo-col">
           <div class="logo-col--img">
             <img src="@/assets/img/Group.png" alt="logo">
           </div>
         </el-col>
-        <el-col :span="10" class="contact-col">
+        <el-col :span="10" :xl="10" :sm="24" :xs="24" class="contact-col">
           <div class="contact-col--content">
             <span class="content-title">Liên hệ</span>
           </div>
@@ -37,45 +37,49 @@
         </el-col>
       </el-row>
     </el-col>
-    <el-col :span="12" class="footer__container--right">
+    <el-col :span="12" :xl="12" :sm="24" :xs="24" class="footer__container--right">
       <el-row class="right_container">
-        <el-col :span="10" class="info-col">
-          <div>
-            <span>Về Kaiyouit Cloud</span>
+        <el-col :span="10" :xl="10" :sm="24" :xs="24" class="info-col">
+          <div class="info-col--content">
+            <span class="content-title">Về Kaiyouit Cloud</span>
           </div>
-          <div>
-            <span>Giới thiệu</span>
+          <div class="info-col--content">
+            <span class="content-text">Giới thiệu</span>
           </div>
-          <div>
-            <span>Dịch vụ</span>
+          <div class="info-col--content">
+            <span class="content-text">Dịch vụ</span>
           </div>
-          <div>
-            <span>Chính sách bảo mật</span>
+          <div class="info-col--content">
+            <span class="content-text">Chính sách bảo mật</span>
           </div>
-          <div>
-            <span>Điều khoản dịch vụ</span>
+          <div class="info-col--content">
+            <span class="content-text">Điều khoản dịch vụ</span>
           </div>
         </el-col>
-        <el-col :span="10" class="form-col">
-          <div>
-            <span>Đăng ký email để nhận thông tin mới nhất</span>
+        <el-col :span="10" :xl="10" :sm="24" :xs="24" class="form-col">
+          <div class="form-col--content">
+            <span class="form-title">Đăng ký email để nhận thông tin mới nhất</span>
           </div>
-          <div>
-            <el-form>
-              <el-form-item label="">
-                <el-input placeholder="Họ và tên"/>
+          <div class="form-col--content">
+            <el-form :model="form" class="form-content">
+              <el-form-item class="form-content--item">
+                <el-input v-model="form.name" class="form-input" placeholder="Họ và tên"></el-input>
+                <img class="form-img" src="@/assets/img/account_circle.png" alt="name-icon">
               </el-form-item>
-              <el-form-item label="">
-                <el-input placeholder="Số điện thoại"/>
+              <el-form-item class="form-content--item">
+                <el-input v-model="form.phone" class="form-input" placeholder="Số điện thoại"/>
+                <img class="form-img" src="@/assets/img/call.png" alt="phone-icon">
               </el-form-item>
-              <el-form-item label="">
-                <el-input placeholder="Nhập email của bạn"/>
+              <el-form-item class="form-content--item">
+                <el-input v-model="form.mail" class="form-input" placeholder="Nhập email của bạn"/>
+                <img class="form-img" src="@/assets/img/mail.png" alt="mail-icon">
               </el-form-item>
-              <el-form-item label="">
-                <el-input placeholder="Nhập nội dung"/>
+              <el-form-item class="form-content--item-customize">
+                <el-input v-model="form.info" class="form-input" placeholder="Nhập nội dung"/>
+                <img class="form-img" src="@/assets/img/edit.png" alt="info-icon">
               </el-form-item>
-              <el-form-item>
-                <el-button @click="">Gửi ngay</el-button>
+              <el-form-item class="form-content--item">
+                <el-button class="form-btn" @click="">GỬI NGAY</el-button>
               </el-form-item>
             </el-form>
           </div>
