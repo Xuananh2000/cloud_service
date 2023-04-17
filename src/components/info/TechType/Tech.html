@@ -1,127 +1,144 @@
-<div>
+<div class="tech">
+  <div class="tech__container">
     <el-row :gutter="20">
-        <el-col :span="3">
-            <div class="grid-content ep-bg-purple"/>
-            <div>
-                <div>
-                    <el-dropdown>
+      <el-col :span="3">
+        <div class="grid-content ep-bg-purple"/>
+        <div>
+          <div>
+            <el-dropdown>
                         <span class="el-dropdown-link">
                           Ngôn ngữ<el-icon class="el-icon--right"><arrow-down/></el-icon>
                         </span>
-                        <template #dropdown>
-                            <el-dropdown-menu>
-                                <el-dropdown-item>PHP</el-dropdown-item>
-                                <el-dropdown-item>Nodejs </el-dropdown-item>
-                                <el-dropdown-item>Python</el-dropdown-item>
-                            </el-dropdown-menu>
-                        </template>
-                    </el-dropdown>
-                    <span>Nhiều ngôn ngữ</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                </div>
-            </div>
-        </el-col>
-        <el-col :span="3">
-            <div class="grid-content ep-bg-purple"/>
-            <div>Framework
-                <div>
-                    <span>Laravel</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>Express</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                </div>
-            </div>
-        </el-col>
-        <el-col :span="3">
-            <div class="grid-content ep-bg-purple"/>
-            <div>Loại hình ứng dụng
-                <div>
-                    <span>Android</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>IOS</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>Desktop APP</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                </div>
-            </div>
-        </el-col>
-        <el-col :span="3">
-            <div class="grid-content ep-bg-purple"/>
-            <div>Chắc năng nâng cao
-                <div>
-                    <span>Có tính năng chat</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>Có tính năng nhạc, video</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>Quay video trực tiếp</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                </div>
-            </div>
-        </el-col>
+              <template #dropdown>
+                <el-dropdown-menu>
+                  <el-dropdown-item>PHP</el-dropdown-item>
+                  <el-dropdown-item>Nodejs</el-dropdown-item>
+                  <el-dropdown-item>Python</el-dropdown-item>
+                </el-dropdown-menu>
+              </template>
+            </el-dropdown>
+            <span>Nhiều ngôn ngữ</span>
+            <el-switch
+                v-model="this.test"
+                size="large"
+            />
+          </div>
+        </div>
+      </el-col>
+      <el-col :span="3">
+        <div class="grid-content ep-bg-purple"/>
+        <div>Framework
+          <div>
+            <span>Laravel</span>
+            <el-switch
+                v-model="this.test"
+                size="large"
+            />
+            <span>Express</span>
+            <el-switch
+                v-model="this.test"
+                size="large"
+            />
+          </div>
+        </div>
+      </el-col>
+      <el-col :span="3">
+        <div class="grid-content ep-bg-purple"/>
+        <div>Loại hình ứng dụng
+          <div>
+            <span>Android</span>
+            <el-switch
+                v-model="this.test"
+                size="large"
+            />
+            <span>IOS</span>
+            <el-switch
+                v-model="this.test"
+                size="large"
+            />
+            <span>Desktop APP</span>
+            <el-switch
+                v-model="this.test"
+                size="large"
+            />
+          </div>
+        </div>
+      </el-col>
+      <el-col :span="3">
+        <div class="grid-content ep-bg-purple"/>
+        <div>Chắc năng nâng cao
+          <div>
+            <span>Có tính năng chat</span>
+            <el-switch
+                v-model="this.test"
+                size="large"
+            />
+            <span>Có tính năng nhạc, video</span>
+            <el-switch
+                v-model="this.test"
+                size="large"
+            />
+            <span>Quay video trực tiếp</span>
+            <el-switch
+                v-model="this.test"
+                size="large"
+            />
+          </div>
+        </div>
+      </el-col>
     </el-row>
     <el-row :gutter="20">
-        <el-col :span="3">
-            <div class="grid-content ep-bg-purple"/>
-            <div>
-                <div>
-                    <el-radio-group class="ml-4">
-                        <el-radio label="1" size="large">Chạy cùng domain</el-radio>
-                        <el-radio label="2" size="large">Hoạt động trên nhiều sub domain</el-radio>
-                        <el-radio label="3" size="large">Hoạt đông trên domain</el-radio>
-                    </el-radio-group>
-                </div>
-            </div>
-        </el-col>
-        <el-col :span="9">
-            <div class="grid-content ep-bg-purple"/>
-            <div>
-                <div>
-                    <span>Web đa ngôn ngữ tách biệt domain</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>Git - CI/CD</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>Có sử dụng docker</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                </div>
-            </div>
-        </el-col>
+      <el-col :span="3">
+        <div class="grid-content ep-bg-purple"/>
+        <div>
+          <div>
+            <el-radio-group class="ml-4">
+              <el-radio label="1" size="large">Chạy cùng domain</el-radio>
+              <el-radio label="2" size="large">Hoạt động trên nhiều sub domain</el-radio>
+              <el-radio label="3" size="large">Hoạt đông trên domain</el-radio>
+            </el-radio-group>
+          </div>
+        </div>
+      </el-col>
+      <el-col :span="9">
+        <div class="grid-content ep-bg-purple"/>
+        <div>
+          <div>
+            <span>Web đa ngôn ngữ tách biệt domain</span>
+            <el-switch
+                v-model="this.test"
+                size="large"
+            />
+            <span>Git - CI/CD</span>
+            <el-switch
+                v-model="this.test"
+                size="large"
+            />
+            <span>Có sử dụng docker</span>
+            <el-switch
+                v-model="this.test"
+                size="large"
+            />
+          </div>
+        </div>
+      </el-col>
     </el-row>
-    <el-button type="primary" @click="handleOnClickToModel" round>Mô hình</el-button>
-    <el-button type="primary" @click="handleOnClickToStore" round>Thông tin lưu trữ</el-button>
+    <el-row :gutter="20">
+      <el-col class="model__container--btn" :span="24">
+        <el-button class="btn-submit" round @click="handleOnClickToModel">
+          <span>
+            <el-icon><ArrowLeftBold /></el-icon>
+            Mô hình
+          </span>
+        </el-button>
+
+        <el-button class="btn-submit" round @click="handleOnClickToStore">
+          <span>
+            Thông tin lưu trữ
+            <el-icon><ArrowRightBold/></el-icon>
+          </span>
+        </el-button>
+      </el-col>
+    </el-row>
+  </div>
 </div>
