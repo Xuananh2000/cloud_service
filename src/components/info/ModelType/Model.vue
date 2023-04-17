@@ -3,10 +3,12 @@
 
 <script>
 
+import { ArrowRightBold } from '@element-plus/icons-vue'
+
 export default {
   name: 'Model',
   components: {
-
+    ArrowRightBold
   },
   data: function () {
     return {

@@ -1,14 +1,14 @@
 <div class="model">
   <div class="model__container">
     <el-row :gutter="20">
-      <el-col class="model__container--type" :span="11">
+      <el-col class="model__container--type" :span="12">
         <div class="type-content">
-          <div class="type-content--title">
-            <div>
-              <span>Loại hình ứng dụng</span>
-            </div>
-          </div>
           <div class="type-content--list">
+            <div class="list-item">
+              <div class="list-item--title">
+                <span>Loại hình ứng dụng</span>
+              </div>
+            </div>
             <div class="list-item">
               <el-switch
                   style="--el-switch-on-color: #13ce66;"
@@ -52,45 +52,52 @@
           </div>
         </div>
       </el-col>
-      <el-col class="model__container--divider" hidden-md-and-down :span="2">
+      <el-col class="model__container--divider" hidden-md-and-down :span="0">
         <el-divider direction="vertical"/>
       </el-col>
-      <el-col class="model__container--source" :span="11">
-        <div class=""/>
-        <div>
-          <span>Quản lý mã nguồn</span>
-        </div>
-        <div>
-          <div>
-            <el-switch
-                style="--el-switch-on-color: #13ce66;"
-                v-model="this.test"
-                size="large"
-            />
-            <span>Git</span>
-          </div>
-          <div>
-            <el-switch
-                style="--el-switch-on-color: #13ce66;"
-                v-model="this.test"
-                size="large"
-            />
-            <span>Đặt Git ở Kaiyouit</span>
-          </div>
-          <div>
-            <el-switch
-                style="--el-switch-on-color: #13ce66;"
-                v-model="this.test"
-                size="large"
-            />
-            <span>Zip source code</span>
+      <el-col class="model__container--source" :span="12">
+        <div class="source-content">
+          <div class="source-content--list">
+            <div class="list-item">
+              <div class="list-item--title">
+                <span>Quản lý mã nguồn</span>
+              </div>
+            </div>
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>Git</span>
+            </div>
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>Đặt Git ở Kaiyouit</span>
+            </div>
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>Zip source code</span>
+            </div>
           </div>
         </div>
       </el-col>
     </el-row>
     <el-row :gutter="20">
       <el-col class="model__container--btn" :span="24">
-        <el-button @click="handleOnClickToTech" round>Thông tin công nghệ</el-button>
+        <el-button class="btn-submit" round @click="handleOnClickToTech">
+          <span>Thông tin công nghệ
+            <el-icon><ArrowRightBold /></el-icon>
+          </span>
+        </el-button>
       </el-col>
     </el-row>
   </div>
