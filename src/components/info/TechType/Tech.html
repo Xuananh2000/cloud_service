@@ -1,85 +1,126 @@
 <div class="tech">
   <div class="tech__container">
-    <el-row :gutter="20">
-      <el-col :span="3">
-        <div class="grid-content ep-bg-purple"/>
-        <div>
-          <div>
-            <el-dropdown>
-                        <span class="el-dropdown-link">
-                          Ngôn ngữ<el-icon class="el-icon--right"><arrow-down/></el-icon>
-                        </span>
-              <template #dropdown>
-                <el-dropdown-menu>
-                  <el-dropdown-item>PHP</el-dropdown-item>
-                  <el-dropdown-item>Nodejs</el-dropdown-item>
-                  <el-dropdown-item>Python</el-dropdown-item>
-                </el-dropdown-menu>
-              </template>
-            </el-dropdown>
-            <span>Nhiều ngôn ngữ</span>
-            <el-switch
-                v-model="this.test"
-                size="large"
-            />
+    <el-row id="firstRow" :gutter="20">
+      <el-col class="tech__container--language" :span="3">
+        <div class="lang-content">
+          <div class="lang-content--list">
+            <div class="list-item--title">
+              <span>Ngôn ngữ</span>
+            </div>
+            <div class="list-item">
+              <el-select v-model="value" class="">
+                <el-option
+                    v-for="item in options"
+                    :key="item.value"
+                    :label="item.label"
+                    :value="item.value"
+                />
+              </el-select>
+            </div>
+            <div class="list-item">
+              <span>Nhiều ngôn ngữ</span>
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+            </div>
           </div>
         </div>
       </el-col>
-      <el-col :span="3">
-        <div class="grid-content ep-bg-purple"/>
-        <div>Framework
-          <div>
-            <span>Laravel</span>
-            <el-switch
-                v-model="this.test"
-                size="large"
-            />
-            <span>Express</span>
-            <el-switch
-                v-model="this.test"
-                size="large"
-            />
+      <el-col class="tech__container--divider" hidden-md-and-down :span="0">
+        <el-divider direction="vertical"/>
+      </el-col>
+      <el-col class="tech__container--framework" :span="3">
+        <div class="framework-content">
+          <div class="framework-content--list">
+            <div class="list-item--title">
+              <span>Framework</span>
+            </div>
+            <div class="list-item">
+              <span>Laravel</span>
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+            </div>
+            <div class="list-item">
+              <span>Express</span>
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+            </div>
           </div>
         </div>
       </el-col>
-      <el-col :span="3">
-        <div class="grid-content ep-bg-purple"/>
-        <div>Loại hình ứng dụng
-          <div>
-            <span>Android</span>
-            <el-switch
-                v-model="this.test"
-                size="large"
-            />
-            <span>IOS</span>
-            <el-switch
-                v-model="this.test"
-                size="large"
-            />
-            <span>Desktop APP</span>
-            <el-switch
-                v-model="this.test"
-                size="large"
-            />
+      <el-col class="tech__container--divider" hidden-md-and-down :span="0">
+        <el-divider direction="vertical"/>
+      </el-col>
+      <el-col class="tech__container--app" :span="3">
+        <div class="app-content">
+          <div class="app-content--list">
+            <div class="list-item--title">
+              <span>App</span>
+            </div>
+            <div class="list-item">
+              <span>Android</span>
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+            </div>
+            <div class="list-item">
+              <span>IOS</span>
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+            </div>
+            <div class="list-item">
+              <span>Desktop APP</span>
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+            </div>
           </div>
         </div>
       </el-col>
-      <el-col :span="3">
-        <div class="grid-content ep-bg-purple"/>
-        <div>Chắc năng nâng cao
-          <div>
+      <el-col class="tech__container--divider" hidden-md-and-down :span="0">
+        <el-divider direction="vertical"/>
+      </el-col>
+      <el-col class="tech__container--feature" :span="3">
+        <div class="feature-content"/>
+        <div class="feature-content--list">
+          <div class="list-item--title">
+            <span>Chức năng nâng cao</span>
+          </div>
+          <div class="list-item">
             <span>Có tính năng chat</span>
             <el-switch
+                style="--el-switch-on-color: #13ce66;"
                 v-model="this.test"
                 size="large"
             />
+          </div>
+          <div class="list-item">
             <span>Có tính năng nhạc, video</span>
             <el-switch
+                style="--el-switch-on-color: #13ce66;"
                 v-model="this.test"
                 size="large"
             />
+          </div>
+          <div class="list-item">
             <span>Quay video trực tiếp</span>
             <el-switch
+                style="--el-switch-on-color: #13ce66;"
                 v-model="this.test"
                 size="large"
             />
@@ -87,51 +128,59 @@
         </div>
       </el-col>
     </el-row>
-    <el-row :gutter="20">
-      <el-col :span="3">
-        <div class="grid-content ep-bg-purple"/>
-        <div>
-          <div>
-            <el-radio-group class="ml-4">
-              <el-radio label="1" size="large">Chạy cùng domain</el-radio>
-              <el-radio label="2" size="large">Hoạt động trên nhiều sub domain</el-radio>
-              <el-radio label="3" size="large">Hoạt đông trên domain</el-radio>
-            </el-radio-group>
+    <el-row id="secondRow" :gutter="20">
+      <el-col class="tech__container--domain" :span="3">
+        <div class="domain-content">
+          <div class="domain-content--list">
+            <div class="list-item">
+              <el-radio-group>
+                <el-radio label="1" size="large">Chạy cùng domain</el-radio>
+                <el-radio label="2" size="large">Hoạt động trên nhiều sub domain</el-radio>
+                <el-radio label="3" size="large">Hoạt đông trên domain</el-radio>
+              </el-radio-group>
+            </div>
           </div>
         </div>
       </el-col>
-      <el-col :span="9">
-        <div class="grid-content ep-bg-purple"/>
-        <div>
-          <div>
-            <span>Web đa ngôn ngữ tách biệt domain</span>
-            <el-switch
-                v-model="this.test"
-                size="large"
-            />
-            <span>Git - CI/CD</span>
-            <el-switch
-                v-model="this.test"
-                size="large"
-            />
-            <span>Có sử dụng docker</span>
-            <el-switch
-                v-model="this.test"
-                size="large"
-            />
+      <el-col class="tech__container--git" :span="9">
+        <div class="git-content">
+          <div class="git-content--list">
+            <div class="list-item">
+              <span>Web đa ngôn ngữ tách biệt domain</span>
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+            </div>
+            <div class="list-item">
+              <span>Git - CI/CD</span>
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+            </div>
+            <div class="list-item">
+              <span>Có sử dụng docker</span>
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+            </div>
           </div>
         </div>
       </el-col>
     </el-row>
-    <el-row :gutter="20">
-      <el-col class="model__container--btn" :span="24">
-        <el-button class="btn-submit" round @click="handleOnClickToModel">
+    <el-row id="thirdRow" :gutter="20">
+      <el-col class="tech__container--btn" :span="24">
+        <el-button class="btn-return" round @click="handleOnClickToModel">
           <span>
-            <el-icon><ArrowLeftBold /></el-icon>
+            <el-icon><ArrowLeftBold/></el-icon>
             Mô hình
           </span>
         </el-button>
-
         <el-button class="btn-submit" round @click="handleOnClickToStore">
           <span>
             Thông tin lưu trữ

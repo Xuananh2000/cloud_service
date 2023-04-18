@@ -1,10 +1,10 @@
-<template src="User.html"></template>
-<style scoped lang="scss" src="User.scss"></style>
+<template src="./Invoice.html"></template>
+<style scoped lang="scss" src="./Invoice.scss"></style>
 
 <script>
 
 export default {
-  name: 'User',
+  name: 'Invoice',
   components: {
 
   },
