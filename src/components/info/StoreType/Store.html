@@ -1,108 +1,184 @@
-<div>
-    <el-row :gutter="20">
-        <el-col :span="3">
-            <div class="grid-content ep-bg-purple"/>
-            <div>Cơ sở dữ liệu
-                <div>
-                    <span>My SQL</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>My SQL</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>My SQL</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                </div>
+<div class="store">
+  <div class="store__container">
+    <el-row id="firstRow" :gutter="20">
+      <el-col class="store__container--database" :span="8">
+        <div class="database-content">
+          <div class="database-content--list">
+            <div class="list-item--title">
+              <span>Cơ sở dữ liệu</span>
             </div>
-        </el-col>
-        <el-col :span="3">
-            <div class="grid-content ep-bg-purple"/>
-            <div>Media
-                <div>
-                    <span>Lưu tại server chạy ứng dụng</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>Lưu ở server tách biệt</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>Lưu trên S3</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                </div>
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>My SQL</span>
+
             </div>
-        </el-col>
-        <el-col :span="3">
-            <div class="grid-content ep-bg-purple"/>
-            <div>Notification
-                <div>
-                    <span>Google push</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>Dịch vụ gửi mail SMTP</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>Dịch vụ gửi mail của Kaiyouit</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>Dịch vụ gửi mail của AWS</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                </div>
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>My SQL</span>
+
             </div>
-        </el-col>
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>My SQL</span>
+
+            </div>
+          </div>
+        </div>
+      </el-col>
+      <el-col class="store__container--divider" hidden-md-and-down :span="0">
+        <el-divider direction="vertical"/>
+      </el-col>
+      <el-col class="store__container--media" :span="8">
+        <div class="media-content">
+          <div class="media-content--list">
+            <div class="list-item--title">
+              <span>Media</span>
+            </div>
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>Lưu tại server chạy ứng dụng</span>
+
+            </div>
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>Lưu ở server tách biệt</span>
+
+            </div>
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>Lưu trên S3</span>
+
+            </div>
+          </div>
+        </div>
+      </el-col>
+      <el-col class="store__container--divider" hidden-md-and-down :span="0">
+        <el-divider direction="vertical"/>
+      </el-col>
+      <el-col class="store__container--notification" :span="8">
+        <div class="notification-content">
+          <div class="notification-content--list">
+            <div class="list-item--title">
+              <span>Notification</span>
+            </div>
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>Google push</span>
+
+            </div>
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>Dịch vụ gửi mail SMTP</span>
+
+            </div>
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>Dịch vụ gửi mail của Kaiyouit</span>
+
+            </div>
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>Dịch vụ gửi mail của AWS</span>
+
+            </div>
+          </div>
+        </div>
+      </el-col>
     </el-row>
-    <el-row :gutter="20">
-        <el-col :span="3">
-            <div class="grid-content ep-bg-purple"/>
-            <div>
-                <div>
-                    <el-radio-group class="ml-4">
-                        <el-radio label="1" size="large">Đặt CSDL ở server chạy ứng dụng</el-radio>
-                        <el-radio label="2" size="large">Lưu ở server tách biệt</el-radio>
-                        <el-radio label="3" size="large">Cloud Satabase</el-radio>
-                    </el-radio-group>
-                </div>
+    <el-row id="secondRow" :gutter="20">
+      <el-col class="store__container--server" :span="8">
+        <div class="server-content">
+          <div class="server-content--list">
+            <div class="list-item">
+              <el-radio-group v-model="radio">
+                <el-radio :label="1" size="large">Đặt CSDL ở server chạy ứng dụng</el-radio>
+                <el-radio :label="2" size="large">Lưu ở server tách biệt</el-radio>
+                <el-radio :label="3" size="large">Cloud Satabase</el-radio>
+              </el-radio-group>
             </div>
-        </el-col>
-        <el-col :span="9">
-            <div class="grid-content ep-bg-purple"/>
-            <div>
-                <div>
-                    <span>Có sử dụng CDN</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>Backup tự động</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                </div>
+          </div>
+        </div>
+      </el-col>
+      <el-col class="store__container--cdn" :span="16">
+        <div class="cdn-content">
+          <div class="cdn-content--list">
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>Có sử dụng CDN</span>
+
             </div>
-        </el-col>
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>Backup tự động</span>
+
+            </div>
+          </div>
+        </div>
+      </el-col>
     </el-row>
-    <el-button type="primary" @click="handleOnClickToTech" round>Công nghệ</el-button>
-    <el-button type="primary" @click="handleOnClickToPerform" round>Thông tin hiệu suất</el-button>
+    <el-row id="thirdRow" :gutter="20">
+      <el-col class="store__container--btn" :span="24">
+        <el-button class="btn-return" round @click="handleOnClickToTech">
+          <span>
+            <el-icon><ArrowLeftBold/></el-icon>
+            Công nghệ
+          </span>
+        </el-button>
+        <el-button class="btn-submit" round @click="handleOnClickToPerform">
+          <span>
+            Thông tin hiệu suất
+            <el-icon><ArrowRightBold/></el-icon>
+          </span>
+        </el-button>
+      </el-col>
+    </el-row>
+  </div>
 </div>

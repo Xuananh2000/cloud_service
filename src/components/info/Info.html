@@ -51,7 +51,7 @@
         <PerformPath @changePath="handleChangePath"/>
       </div>
       <div v-if="this.curPage === 'SafetyPath'">
-        <SafetyPath @changePath="handleChangePath"/>
+        <SafetyPath @changeComponent="handleChangeComponent"/>
       </div>
       <div v-else-if="!this.curPage">Loading...</div>
     </div>

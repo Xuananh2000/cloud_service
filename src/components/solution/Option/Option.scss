@@ -1,0 +1,27 @@
+.option {
+  &__container {
+    .el-row {}
+    &--column {
+      .column-content {
+        height: 44em;
+        background: #A5AAAF;
+        border-radius: 30px;
+        .box-card {
+          .card-header {
+            span {}
+          }
+          .card-body {
+            &--list {
+              .item-title {
+                span {}
+              }
+              .item-content {
+                span {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

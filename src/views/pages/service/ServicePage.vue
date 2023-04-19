@@ -33,6 +33,10 @@ export default {
   methods: {
 
     init() {},
+
+    handleChangeComponent(data) {
+      this.curPage = data
+    },
   }
 }
 </script>

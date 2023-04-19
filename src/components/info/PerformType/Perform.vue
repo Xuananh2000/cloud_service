@@ -3,10 +3,13 @@
 
 <script>
 
+import { ArrowRightBold, ArrowLeftBold } from '@element-plus/icons-vue'
+
 export default {
   name: 'Perform',
   components: {
-
+    ArrowRightBold,
+    ArrowLeftBold,
   },
   data: function () {
     return {

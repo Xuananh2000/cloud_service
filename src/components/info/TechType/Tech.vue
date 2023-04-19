@@ -9,33 +9,34 @@ export default {
   name: 'Tech',
   components: {
     ArrowRightBold,
-    ArrowLeftBold
+    ArrowLeftBold,
   },
   data: function () {
     return {
       test: true,
       path: '',
+      radio: 1,
       value: '',
       options: [
         {
           value: 'Option1',
-          label: 'Option1',
+          label: 'PHP Framework',
         },
         {
           value: 'Option2',
-          label: 'Option2',
+          label: 'Nodejs',
         },
         {
           value: 'Option3',
-          label: 'Option3',
+          label: 'Nodejs Typescript',
         },
         {
           value: 'Option4',
-          label: 'Option4',
+          label: 'Python Origin',
         },
         {
           value: 'Option5',
-          label: 'Option5',
+          label: 'Python Framework',
         },
       ]
     }

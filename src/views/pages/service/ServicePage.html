@@ -1,9 +1,9 @@
 <div>
     <div v-if="this.curPage === 'Info'">
-        <Info/>
+        <Info @changeComponent="handleChangeComponent"/>
     </div>
     <div v-if="this.curPage === 'Solution'">
-        <Solution/>
+        <Solution @changeComponent="handleChangeComponent"/>
     </div>
     <div v-if="this.curPage === 'Register'">
         <Register/>

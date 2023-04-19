@@ -3,15 +3,19 @@
 
 <script>
 
+import { ArrowRightBold, ArrowLeftBold } from '@element-plus/icons-vue'
+
 export default {
   name: 'Safety',
   components: {
-
+    ArrowRightBold,
+    ArrowLeftBold,
   },
   data: function () {
     return {
       test: true,
       path: '',
+      nextDestination: '',
     }
   },
 
@@ -32,9 +36,8 @@ export default {
       this.path = 'PerformPath'
       this.$emit('changePath', this.path)
     },
-    handleOnClickToSolution() {
-      this.path = 'SolutionPath'
-      this.$emit('changePath', this.path)
+    handleOnClickToSolution(data) {
+      this.$emit('changeComponent', data)
     },
   }
 }

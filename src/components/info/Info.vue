@@ -42,6 +42,9 @@ export default {
     handleChangePath(data) {
       this.curPage = data
     },
+    handleChangeComponent(data) {
+      this.$emit('changeComponent', data)
+    }
   }
 }
 </script>

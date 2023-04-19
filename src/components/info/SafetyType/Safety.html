@@ -1,33 +1,79 @@
-<div>
-    <el-row :gutter="20">
-        <el-col :span="12">
-            <div class="grid-content ep-bg-purple"/>
-            <div>
-                <div>
-                    <span>SSL free</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>Dịch vụ SSL nâng cao</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>Backup tự động</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                    <span>Server thay thế khi có sự cố</span>
-                    <el-switch
-                            v-model="this.test"
-                            size="large"
-                    />
-                </div>
+<div class="safety">
+  <div class="safety__container">
+    <el-row id="firstRow" :gutter="20">
+      <el-col class="safety__container--ssl" :span="24">
+        <div class="ssl-content">
+          <div class="ssl-content--list">
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>SSL free</span>
             </div>
-        </el-col>
+          </div>
+        </div>
+      </el-col>
+      <el-col class="safety__container--upgrade-ssl" :span="24">
+        <div class="upgrade-ssl-content">
+          <div class="upgrade-ssl-content--list">
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>Dịch vụ SSL nâng cao</span>
+            </div>
+          </div>
+        </div>
+      </el-col>
+      <el-col class="safety__container--backup" :span="24">
+        <div class="backup-content">
+          <div class="backup-content--list">
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>Backup tự động</span>
+            </div>
+          </div>
+        </div>
+      </el-col>
+      <el-col class="safety__container--alternative" :span="24">
+        <div class="alternative-content">
+          <div class="alternative-content--list">
+            <div class="list-item">
+              <el-switch
+                  style="--el-switch-on-color: #13ce66;"
+                  v-model="this.test"
+                  size="large"
+              />
+              <span>Server thay thế khi có sự cố</span>
+            </div>
+          </div>
+        </div>
+      </el-col>
     </el-row>
-    <el-button type="primary" @click="handleOnClickToPerform" round>Hiệu suất</el-button>
-    <el-button type="primary" @click="handleOnClickToSolution" round>Thông tin giải pháp</el-button>
+    <el-row id="secondRow" :gutter="20">
+      <el-col class="safety__container--btn" :span="24">
+        <el-button class="btn-return" round @click="handleOnClickToPerform">
+          <span>
+            <el-icon><ArrowLeftBold/></el-icon>
+            Hiệu suất
+          </span>
+        </el-button>
+        <el-button class="btn-submit" round @click="handleOnClickToSolution('Solution')">
+          <span>
+            Thông tin giải pháp
+            <el-icon><ArrowRightBold/></el-icon>
+          </span>
+        </el-button>
+      </el-col>
+    </el-row>
+  </div>
 </div>
+

@@ -1,0 +1,79 @@
+.solution {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  &__container {
+
+    .el-row {
+      align-items: center;
+    }
+
+    &--title {
+      padding: 0!important;
+      margin: 0 0 4em 0;
+      .title-content {
+        span {
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 58px;
+          letter-spacing: 0.05em;
+          color: #262626;
+          width: 12em;
+          display: flex;
+        }
+      }
+    }
+    &--option {
+      padding: 0!important;
+      .option-content {
+
+      }
+    }
+    &--price {
+      padding: 0!important;
+      .price-content {
+
+      }
+    }
+    &--btn-return {
+      padding: 0!important;
+      margin: 3em 0;
+      .btn-return {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.05em;
+        color: #262626;
+        border: none;
+        background: #FFFFFF;
+        padding: 0;
+
+        span {
+          display: contents;
+        }
+      }
+
+    }
+    &--btn-submit {
+      padding: 0!important;
+      justify-content: center;
+      display: flex;
+      .btn-submit {
+        width: 207px;
+        height: 53px;
+        background: #FF1D0D;
+        border-radius: 5px;
+        span {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          /* identical to box height */
+
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}

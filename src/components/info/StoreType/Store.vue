@@ -3,15 +3,19 @@
 
 <script>
 
+import { ArrowRightBold, ArrowLeftBold } from '@element-plus/icons-vue'
+
 export default {
   name: 'Store',
   components: {
-
+    ArrowRightBold,
+    ArrowLeftBold,
   },
   data: function () {
     return {
       test: true,
       path: '',
+      radio: 1,
     }
   },
 

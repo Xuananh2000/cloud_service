@@ -1,3 +1,40 @@
-<div>
-    Solution
+<div class="solution">
+  <div class="solution__container">
+    <el-row :gutter="20">
+      <el-col class="solution__container--title" :span="24">
+        <div class="title-content">
+          <span class="">Đây là một số giải pháp về chi phí cho bạn</span>
+        </div>
+      </el-col>
+
+      <el-col v-if="this.curPage === 'Option'" class="solution__container--option" :span="24">
+        <div class="option-content">
+          <Option/>
+        </div>
+
+      </el-col>
+
+      <el-col v-if="this.curPage === 'Price'" class="solution__container--price" :span="24">
+        <div class="price-content">
+          <Price/>
+        </div>
+      </el-col>
+
+
+      <el-col class="solution__container--btn-return" :span="24">
+        <el-button class="btn-return" round @click="handleOnClickToModel('Info')">
+          <span>
+            <el-icon><ArrowLeftBold/></el-icon>Cập nhật lại thông tin ứng dụng
+          </span>
+        </el-button>
+      </el-col>
+
+      <el-col v-if="this.curPage === 'Option'" class="solution__container--btn-submit" :span="24">
+        <el-button class="btn-submit" round @click="handleOnClickToRegister">
+          <span>ĐĂNG KÍ DỊCH VỤ</span>
+        </el-button>
+      </el-col>
+
+    </el-row>
+  </div>
 </div>

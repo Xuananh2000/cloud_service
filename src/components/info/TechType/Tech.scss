@@ -3,6 +3,7 @@
   display: flex;
   font-family: 'Inter Tight';
   font-style: normal;
+
   &__container {
     background: #FFFFFF;
     box-shadow: 24px 21px 63px rgba(0, 0, 0, 0.1);
@@ -11,28 +12,39 @@
 
     .el-row {
       justify-content: space-between;
-      margin: 3em 6em!important;
+      margin: 3em 6em !important;
     }
 
-    #firstRow {}
-    #secondRow {}
-    #thirdRow {}
+    #firstRow {
+    }
+
+    #secondRow {
+    }
+
+    #thirdRow {
+    }
+
     &--divider {
-      padding: 0!important;
+      padding: 0 !important;
       justify-content: center;
       display: flex;
+
       .el-divider {
         height: 100%;
       }
     }
+
     &--language {
-      padding: 0!important;
+      padding: 0 !important;
+
       .lang-content {
         &--list {
           justify-content: center;
           display: grid;
+
           .list-item {
             padding: 0.2em 0;
+
             &--title {
               height: 46px;
               margin: 0 0 2em 0;
@@ -40,8 +52,10 @@
               display: flex;
               align-items: center;
               justify-content: center;
-              width: 14em;
+              width: fit-content;
               background: #EFF7FF;
+              padding: 0 1em;
+
               span {
                 font-weight: 600;
                 font-size: 18px;
@@ -63,14 +77,18 @@
         }
       }
     }
+
     &--framework {
-      padding: 0!important;
+      padding: 0 !important;
+
       .framework-content {
         &--list {
           justify-content: center;
           display: grid;
+
           .list-item {
             padding: 0.2em 0;
+
             &--title {
               height: 46px;
               margin: 0 0 2em 0;
@@ -78,8 +96,10 @@
               display: flex;
               align-items: center;
               justify-content: center;
-              width: 14em;
+              width: fit-content;
               background: #EFF7FF;
+              padding: 0 1em;
+
               span {
                 font-weight: 600;
                 font-size: 18px;
@@ -101,14 +121,18 @@
         }
       }
     }
+
     &--app {
-      padding: 0!important;
+      padding: 0 !important;
+
       .app-content {
         &--list {
           justify-content: center;
           display: grid;
+
           .list-item {
             padding: 0.2em 0;
+
             &--title {
               height: 46px;
               margin: 0 0 2em 0;
@@ -116,8 +140,10 @@
               display: flex;
               align-items: center;
               justify-content: center;
-              width: 14em;
+              width: fit-content;
               background: #EFF7FF;
+              padding: 0 1em;
+
               span {
                 font-weight: 600;
                 font-size: 18px;
@@ -139,14 +165,18 @@
         }
       }
     }
+
     &--feature {
-      padding: 0!important;
+      padding: 0 !important;
+
       .feature-content {
         &--list {
           justify-content: center;
           display: grid;
+
           .list-item {
             padding: 0.2em 0;
+
             &--title {
               height: 46px;
               margin: 0 0 2em 0;
@@ -154,8 +184,10 @@
               display: flex;
               align-items: center;
               justify-content: center;
-              width: 14em;
+              width: fit-content;
               background: #EFF7FF;
+              padding: 0 1em;
+
               span {
                 font-weight: 600;
                 font-size: 18px;
@@ -177,31 +209,59 @@
         }
       }
     }
+
     &--domain {
+      padding: 0 !important;
+
       .domain-content {
         &--list {
-          .list-item {}
-        }
-      }
-    }
-    &--git {
-      .git-content {
-        &--list {
           .list-item {
-
           }
         }
       }
     }
+
+    &--git {
+      padding: 0 !important;
+      align-items: center;
+      display: grid;
+      border: 2px dashed #CDDDED;
+      border-radius: 10px;
+
+      .git-content {
+        padding: 0 2em;
+
+        &--list {
+          display: flex;
+          justify-content: space-between;
+
+          .list-item {
+            padding: 0.2em 0;
+
+            span {
+              padding: 0 0.5em;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 19px;
+              letter-spacing: 0.05em;
+              color: #262626;
+            }
+          }
+        }
+      }
+    }
+
     &--btn {
-      padding: 0!important;
+      padding: 0 !important;
       justify-content: space-between;
       display: flex;
+
       .btn-return {
         padding: 0;
         height: 44px;
         background: #FFFFFF;
         border: none;
+
         span {
           font-weight: 700;
           font-size: 16px;
@@ -211,11 +271,13 @@
           display: contents;
         }
       }
+
       .btn-submit {
         width: 244px;
         height: 44px;
         background: linear-gradient(223.99deg, #5F9FFF 6.84%, #0065FC 90.69%);
         border-radius: 90px;
+
         span {
           font-weight: 700;
           font-size: 16px;
@@ -228,3 +290,4 @@
     }
   }
 }
+

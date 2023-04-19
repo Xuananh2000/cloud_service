@@ -1,0 +1,131 @@
+.perform {
+  justify-content: center;
+  display: flex;
+  font-family: 'Inter Tight';
+  font-style: normal;
+
+  &__container {
+    background: #FFFFFF;
+    box-shadow: 24px 21px 63px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 50em;
+
+    .el-row {
+      justify-content: space-between;
+      margin: 3em 6em !important;
+    }
+
+    #firstRow {
+    }
+
+    #secondRow {
+      padding: 8em 0 0 0;
+    }
+
+
+    &--stable {
+      padding: 0 !important;
+
+      .stable-content {
+        &--list {
+
+          .list-item {
+            padding: 0.2em 0;
+
+            span {
+              padding: 0 0.5em;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 19px;
+              letter-spacing: 0.05em;
+              color: #262626;
+            }
+          }
+        }
+      }
+    }
+
+    &--auto {
+      padding: 0 !important;
+
+      .auto-content {
+        &--list {
+
+          .list-item {
+            padding: 0.2em 0;
+
+            span {
+              padding: 0 0.5em;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 19px;
+              letter-spacing: 0.05em;
+              color: #262626;
+            }
+          }
+        }
+      }
+    }
+
+    &--aws {
+      padding: 0 !important;
+
+      .aws-content {
+        &--list {
+
+          .list-item {
+            padding: 0.2em 0;
+
+            span {
+              padding: 0 0.5em;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 19px;
+              letter-spacing: 0.05em;
+              color: #262626;
+            }
+          }
+        }
+      }
+    }
+
+    &--btn {
+      padding: 0 !important;
+      justify-content: space-between;
+      display: flex;
+
+      .btn-return {
+        padding: 0;
+        height: 44px;
+        background: #FFFFFF;
+        border: none;
+
+        span {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.05em;
+          color: #262626;
+          display: contents;
+        }
+      }
+
+      .btn-submit {
+        width: 244px;
+        height: 44px;
+        background: linear-gradient(223.99deg, #5F9FFF 6.84%, #0065FC 90.69%);
+        border-radius: 90px;
+
+        span {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.05em;
+          color: #FFFFFF;
+          display: contents;
+        }
+      }
+    }
+  }
+}
+

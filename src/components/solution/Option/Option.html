@@ -1,0 +1,65 @@
+<div class="option">
+  <div class="option__container">
+    <el-row :gutter="20">
+      <el-col class="option__container--column" :span="8">
+        <div class="column-content">
+          <el-card class="box-card">
+            <template #header>
+              <div class="card-header">
+                <span>Server chạy ứng dụng</span>
+              </div>
+            </template>
+            <div class="card-body">
+              <div v-for="o in 10" :key="o" class="card-body--list">
+                <div class="item-title">
+                  <span>{{ 'List item ' + o }}</span>
+                </div>
+                <div class="item-content">
+                  <span>Ram: 1G | SSD: 20G | CPU: 1 core</span>
+                </div>
+              </div>
+            </div>
+          </el-card>
+        </div>
+      </el-col>
+      <el-col class="option__container--column" :span="8">
+        <div class="column-content">
+          <el-card class="box-card">
+            <template #header>
+              <div class="card-header">
+                <span>Server chạy ứng dụng</span>
+              </div>
+            </template>
+            <div class="card-body">
+              <div v-for="o in 10" :key="o" class="card-body--list">
+              <div class="list-item--title">
+                <span>{{ 'List item ' + o }}</span>
+              </div>
+                <div class="list-item"><span>Ram: 1G | SSD: 20G | CPU: 1 core</span></div>
+              </div>
+            </div>
+          </el-card>
+        </div>
+      </el-col>
+      <el-col class="option__container--column" :span="8">
+        <div class="column-content">
+          <el-card class="box-card">
+            <template #header>
+              <div class="card-header">
+                <span>Server chạy ứng dụng</span>
+              </div>
+            </template>
+            <div class="card-body">
+              <div v-for="o in 10" :key="o" class="card-body--list">
+                <div class="list-item--title">
+                  <span>{{ 'List item ' + o }}</span>
+                </div>
+                <div class="list-item"><span>Ram: 1G | SSD: 20G | CPU: 1 core</span></div>
+              </div>
+            </div>
+          </el-card>
+        </div>
+      </el-col>
+    </el-row>
+  </div>
+</div>
