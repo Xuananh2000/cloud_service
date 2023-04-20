@@ -3,61 +3,80 @@
     <el-row :gutter="20">
       <el-col class="option__container--column" :span="8">
         <div class="column-content">
-          <el-card class="box-card">
-            <template #header>
-              <div class="card-header">
-                <span>Server chạy ứng dụng</span>
-              </div>
-            </template>
-            <div class="card-body">
-              <div v-for="o in 10" :key="o" class="card-body--list">
-                <div class="item-title">
-                  <span>{{ 'List item ' + o }}</span>
-                </div>
-                <div class="item-content">
-                  <span>Ram: 1G | SSD: 20G | CPU: 1 core</span>
-                </div>
-              </div>
+          <div class="header-card">
+            <div class="card-header">
+              <span>Server chạy ứng dụng</span>
             </div>
-          </el-card>
+          </div>
+          <div class="body-card">
+            <el-scrollbar height="42em">
+              <div v-for="x in 10" :key="x" class="body-card--list">
+                <div @click="handleSelection1(x)" class="item" :class="{'is-active': x == activeIndex1}">
+                  <div class="item-img">
+                    <img src="@/assets/img/OK.png">
+                  </div>
+                  <div class="item-title">
+                    <span>{{ 'Ubuntu ' + x }}</span>
+                  </div>
+                  <div class="item-content">
+                    <span>Ram: 1G | SSD: 20G | CPU: 1 core</span>
+                  </div>
+                </div>
+              </div>
+            </el-scrollbar>
+          </div>
         </div>
       </el-col>
       <el-col class="option__container--column" :span="8">
         <div class="column-content">
-          <el-card class="box-card">
-            <template #header>
-              <div class="card-header">
-                <span>Server chạy ứng dụng</span>
-              </div>
-            </template>
-            <div class="card-body">
-              <div v-for="o in 10" :key="o" class="card-body--list">
-              <div class="list-item--title">
-                <span>{{ 'List item ' + o }}</span>
-              </div>
-                <div class="list-item"><span>Ram: 1G | SSD: 20G | CPU: 1 core</span></div>
-              </div>
+          <div class="header-card">
+            <div class="card-header">
+              <span>Server chạy ứng dụng</span>
             </div>
-          </el-card>
+          </div>
+          <div class="body-card">
+            <el-scrollbar height="42em">
+              <div v-for="y in 10" :key="y" class="body-card--list">
+                <div @click="handleSelection2(y)" class="item" :class="{'is-active': y == activeIndex2}">
+                  <div class="item-img">
+                    <img src="@/assets/img/OK.png">
+                  </div>
+                  <div class="item-title">
+                    <span>{{ 'Ubuntu ' + y }}</span>
+                  </div>
+                  <div class="item-content">
+                    <span>Ram: 1G | SSD: 20G | CPU: 1 core</span>
+                  </div>
+                </div>
+              </div>
+            </el-scrollbar>
+          </div>
         </div>
       </el-col>
       <el-col class="option__container--column" :span="8">
         <div class="column-content">
-          <el-card class="box-card">
-            <template #header>
-              <div class="card-header">
-                <span>Server chạy ứng dụng</span>
-              </div>
-            </template>
-            <div class="card-body">
-              <div v-for="o in 10" :key="o" class="card-body--list">
-                <div class="list-item--title">
-                  <span>{{ 'List item ' + o }}</span>
-                </div>
-                <div class="list-item"><span>Ram: 1G | SSD: 20G | CPU: 1 core</span></div>
-              </div>
+          <div class="header-card">
+            <div class="card-header">
+              <span>Server chạy ứng dụng</span>
             </div>
-          </el-card>
+          </div>
+          <div class="body-card">
+            <el-scrollbar height="42em">
+              <div v-for="z in 10" :key="z" class="body-card--list">
+                <div @click="handleSelection3(z)" class="item" :class="{'is-active': z == activeIndex3}">
+                  <div class="item-img">
+                    <img src="@/assets/img/OK.png">
+                  </div>
+                  <div class="item-title">
+                    <span>{{ 'SSL ' + z }}</span>
+                  </div>
+                  <div class="item-content">
+                    <span>Ram: 1G | SSD: 20G | CPU: 1 core</span>
+                  </div>
+                </div>
+              </div>
+            </el-scrollbar>
+          </div>
         </div>
       </el-col>
     </el-row>

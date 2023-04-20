@@ -11,7 +11,10 @@ export default {
   data: function () {
     return {
       step: 1,
-      path: ''
+      path: '',
+      activeIndex1: null,
+      activeIndex2: null,
+      activeIndex3: null,
     }
   },
 
@@ -27,6 +30,16 @@ export default {
   methods: {
 
     init() {},
+
+    handleSelection1(data) {
+      this.activeIndex1 = data
+    },
+    handleSelection2(data) {
+      this.activeIndex2 = data
+    },
+    handleSelection3(data) {
+      this.activeIndex3 = data
+    },
 
   }
 }

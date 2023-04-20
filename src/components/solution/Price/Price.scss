@@ -1,0 +1,111 @@
+.price {
+  &__container {
+    font-family: 'Inter Tight';
+    font-style: normal;
+
+    .el-row {
+    }
+
+    &--column {
+      padding: 0 !important;
+
+      .option-column {
+        background: #FFFFFF;
+        box-shadow: 24px 21px 63px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+
+        &--list {
+          padding: 6em 8em;
+
+          .item-list {
+            .item {
+              justify-content: space-between;
+              display: flex;
+              height: 3em;
+
+              &-info {
+                height: 100%;
+                display: grid;
+                align-content: space-between;
+
+                &--title {
+                  span {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.05em;
+                    color: #0A91F2;
+                  }
+                }
+
+                &--content {
+                  span {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.05em;
+                    color: #262626;
+                  }
+                }
+              }
+
+              &-unit {
+                &--title {
+                  span {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    letter-spacing: 0.05em;
+                    color: #0A91F2;
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+
+      .price-column {
+        background: #EFF7FF;
+        box-shadow: 24px 21px 63px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+
+        &--list {
+          .price-row {
+            .price-title {
+              &--content {
+                span {
+                }
+              }
+            }
+
+            .price-item {
+              &--customize {
+                .price-item--content {
+                  .price-tag {
+                    span {
+                    }
+                  }
+
+                  .price-per {
+                    span {
+                    }
+                  }
+                }
+              }
+
+              &--title {
+                span {
+                }
+              }
+
+              &--tag {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

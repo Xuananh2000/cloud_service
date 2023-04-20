@@ -1,1 +1,133 @@
-ALOOOOOOOOOOOOOOOOOOOOOOOOO
+<div class="price">
+  <div class="price__container">
+    <el-row :gutter="20">
+      <el-col class="price__container--column" :span="14">
+        <div class="option-column">
+          <div class="option-column--list">
+            <div v-for="x in 4" :key="x" class="item-list">
+              <div class="item">
+                <div class="item-info">
+                  <div class="item-info--title">
+                    <span>{{ 'Ubuntu ' + x }}</span>
+                  </div>
+                  <div class="item-info--content">
+                    <span>Ram: 1G | SSD: 20G | CPU: 1 core</span>
+                  </div>
+                </div>
+                <div class="item-unit">
+                  <div class="item-unit--title">
+                    <span>$1000</span>
+                  </div>
+                </div>
+              </div>
+              <el-divider/>
+            </div>
+          </div>
+        </div>
+      </el-col>
+      <el-col class="price__container--column" :span="2"></el-col>
+      <el-col class="price__container--column" :span="8">
+        <div class="price-column">
+          <div class="price-column--list">
+
+            <el-row class="price-row">
+              <el-col class="price-title" :span="24">
+                <div class="price-title--content">
+                  <span>Tổng chi phí dự tính</span>
+                </div>
+              </el-col>
+            </el-row>
+
+            <el-row class="price-row">
+              <el-col class="price-item" :span="20">
+                <div class="price-item--title">
+                  <span>Ubuntu 2</span>
+                </div>
+              </el-col>
+              <el-col class="price-item--customize" :span="4">
+                <div class="price-item--content">
+                  <div class="price-item--tag">
+                    <span>$1000/mo</span>
+                  </div>
+                  <div class="price-item-per">
+                    <span>1 month</span>
+                  </div>
+                </div>
+              </el-col>
+              <el-divider/>
+            </el-row>
+
+            <el-row class="price-row">
+              <el-col class="price-item" :span="20">
+                <div class="price-item--title">
+                  <span>Phí cài đặt ban đầu</span>
+                </div>
+              </el-col>
+              <el-col class="price-item" :span="4">
+                <div class="price-item--tag">
+                  <span>$1000</span>
+                </div>
+              </el-col>
+              <el-divider/>
+            </el-row>
+
+            <el-row class="price-row">
+              <el-col class="price-item" :span="20">
+                <div class="price-item--title">
+                  <span>Phí vận hành hằng năm</span>
+                </div>
+              </el-col>
+              <el-col class="price-item--customize" :span="4">
+                <div class="price-item--content">
+                  <div class="price-item--tag">
+                    <span>$1000/year</span>
+                  </div>
+                  <div class="price-item-per">
+                    <span>1 year</span>
+                  </div>
+                </div>
+              </el-col>
+              <el-divider/>
+            </el-row>
+
+            <el-row class="price-row">
+              <el-col class="price-item" :span="20">
+                <div class="price-item--title">
+                  <span>Phí cố định</span>
+                </div>
+              </el-col>
+              <el-col class="price-item" :span="4">
+                <div class="price-item--tag">
+                  <span>$1000</span>
+                </div>
+              </el-col>
+              <el-divider/>
+            </el-row>
+
+            <el-row class="price-row">
+              <el-col class="price-item" :span="20">
+                <div class="price-item--title">
+                  <span>Tổng chi phí</span>
+                </div>
+              </el-col>
+              <el-col class="price-item" :span="4">
+                <div class="price-item--tag--customize">
+                  <span>$4000</span>
+                </div>
+              </el-col>
+              <el-divider/>
+            </el-row>
+
+            <el-row class="price-row">
+              <el-col class="price-item" :span="24">
+                <el-button class="btn-submit" round @click="">
+                  <span>ĐĂNG KÍ DỊCH VỤ</span>
+                </el-button>
+              </el-col>
+            </el-row>
+          </div>
+        </div>
+      </el-col>
+    </el-row>
+  </div>
+</div>
