@@ -1,1 +1,24 @@
-<div>Register</div>
+<div class="register">
+  <div class="register__container">
+    <div v-if="!isSuccessed" class="invoice-form">
+      <Invoice/>
+    </div>
+    <div v-else class="success-form">
+      <div class="success-form--img">
+        <img src="@/assets/img/check_circle.png">
+      </div>
+      <div class="success-form--title">
+        <span>
+          Bạn đã đăng ký thành công
+        </span>
+      </div>
+      <div class="success-form--content">
+        <span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea commodo consequat.
+      </span>
+      </div>
+    </div>
+  </div>
+</div>

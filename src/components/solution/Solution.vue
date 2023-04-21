@@ -43,6 +43,10 @@ export default {
     handleOnClickToRegister() {
       this.curPage = 'Price'
     },
+
+    handleChangeComponent(data) {
+      this.$emit('changeComponent', data)
+    }
   }
 }
 </script>

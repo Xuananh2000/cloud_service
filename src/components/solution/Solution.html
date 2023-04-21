@@ -16,13 +16,13 @@
 
       <el-col v-if="this.curPage === 'Price'" class="solution__container--price" :span="24">
         <div class="price-content">
-          <Price/>
+          <Price @changeComponent="handleChangeComponent"/>
         </div>
       </el-col>
 
 
       <el-col class="solution__container--btn-return" :span="24">
-        <el-button class="btn-return" round @click="handleOnClickToModel('Info')">
+        <el-button class="btn-return" round @click="handleChangeComponent('Info')">
           <span>
             <el-icon><ArrowLeftBold/></el-icon>Cập nhật lại thông tin ứng dụng
           </span>

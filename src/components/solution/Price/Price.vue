@@ -10,8 +10,6 @@ export default {
   },
   data: function () {
     return {
-      step: 1,
-      path: ''
     }
   },
 
@@ -27,6 +25,10 @@ export default {
   methods: {
 
     init() {},
+
+    handleOnClickToRegister(data) {
+      this.$emit('changeComponent', data)
+    }
 
   }
 }

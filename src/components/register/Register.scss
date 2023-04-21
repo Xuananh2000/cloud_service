@@ -1,0 +1,48 @@
+.register {
+  &__container {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    .invoice-form {
+    }
+
+    .success-form {
+      &--img {
+        justify-content: center;
+        display: flex;
+        margin: 2em;
+        img {
+        }
+      }
+
+      &--title {
+        justify-content: center;
+        display: flex;
+        margin: 2em;
+
+        span {
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 58px;
+          letter-spacing: 0.05em;
+          color: #262626;
+        }
+      }
+
+      &--content {
+        justify-content: center;
+        display: flex;
+        margin: 2em;
+
+        span {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: center;
+          letter-spacing: 0.05em;
+          color: #262626;
+          width: 30em;
+        }
+      }
+    }
+  }
+}
