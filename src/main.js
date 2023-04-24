@@ -34,11 +34,16 @@ app.use(VueLazyload, { loading: loadImage })
 // import bootstrap from 'bootstrap/dist/css/bootstrap.css'
 // app.use(bootstrap)
 
-//Element UI
+// Element UI
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import 'element-plus/theme-chalk/display.css'
 app.use(ElementPlus)
 
+// Vue-ReCaptcha
+// import { VueRecaptchaPlugin } from 'vue-recaptcha'
+// app.use(VueRecaptchaPlugin, {
+//     v2SiteKey: '6LdpJrElAAAAAHYby64hF4e2dU8dAUkMLg6Mjii7',
+// })
 
 app.mount('#app')

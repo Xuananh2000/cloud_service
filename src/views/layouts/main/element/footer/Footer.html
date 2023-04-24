@@ -75,7 +75,14 @@
                 <img class="form-img" src="@/assets/img/mail.png" alt="mail-icon">
               </el-form-item>
               <el-form-item class="form-content--item-customize">
-                <el-input v-model="form.info" class="form-input" placeholder="Nhập nội dung"/>
+                <el-input
+                    v-model="form.info"
+                    :rows="4"
+                    type="textarea"
+                    placeholder="Nhập nội dung"
+                    class="form-input"
+                />
+
                 <img class="form-img" src="@/assets/img/edit.png" alt="info-icon">
               </el-form-item>
               <el-form-item class="form-content--item">

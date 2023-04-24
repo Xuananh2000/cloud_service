@@ -1,1 +1,144 @@
-<div>ContactPage</div>
+<div class="contact">
+  <div class="contact__container">
+    <el-row :gutter="20">
+      <el-col class="contact__container--title" :span="24">
+        <div class="title-content">
+          <span>Liên hệ</span>
+        </div>
+      </el-col>
+
+      <el-col class="contact__container--form" :span="18">
+        <div class="form-content">
+          <el-form :model="form" class="form-content__container">
+            <el-row class="form-content__container--information">
+              <el-col class="email-col" :span="10">
+                <el-form-item class="form-item">
+                  <div class="form-item--title">
+                    <span class="form-title">Email của bạn</span>
+                  </div>
+                  <div class="form-item--content">
+                    <el-input v-model="form.name" class="form-input" placeholder="Nhập email của bạn"/>
+                  </div>
+                </el-form-item>
+              </el-col>
+              <el-col class="phone-col" :span="10">
+                <el-form-item class="form-item">
+                  <div class="form-item--title">
+                    <span class="form-title">Số điện thoại của bạn</span>
+                  </div>
+                  <div class="form-item--content">
+                    <el-input v-model="form.phone" class="form-input" placeholder="Nhập số điện thoại của bạn"/>
+                  </div>
+                </el-form-item>
+              </el-col>
+            </el-row>
+
+            <el-row class="form-content__container--description">
+              <el-col class="text-col" :span="24">
+                <el-form-item class="form-item">
+                  <div class="form-item--title">
+                    <span class="form-title">Mô tả sơ qua về ứng dụng của bạn</span>
+                  </div>
+                  <div class="form-item--content">
+                    <el-input
+                        v-model="form.mail"
+                        :rows="8"
+                        type="textarea"
+                        placeholder="Nhập nội dung"
+                        class="form-input"
+                    />
+                  </div>
+                </el-form-item>
+              </el-col>
+            </el-row>
+
+            <el-row class="form-content__container--service">
+              <el-col class="option-col" :span="12">
+                <el-form-item class="form-item">
+                  <div class="form-item--title">
+                    <span class="form-title">Dịch vụ cần tham chiếu</span>
+                  </div>
+                  <div class="form-item--content">
+                    <el-select v-model="value" class="form-input" placeholder="Thiết kế giải pháp">
+                      <el-option
+                          v-for="item in options"
+                          :key="item.value"
+                          :label="item.label"
+                          :value="item.value"
+                      />
+                    </el-select>
+                  </div>
+                </el-form-item>
+              </el-col>
+              <el-col class="verify-col" :span="12">
+                <el-form-item class="form-item--customize">
+                  <div class="lang-content--list">
+                    <div class="list-item">
+                      Captcha Ở đây nha!
+                    </div>
+                  </div>
+                </el-form-item>
+              </el-col>
+            </el-row>
+
+            <el-row class="form-content__container--btn">
+              <el-col class="btn-col" :span="24">
+                <el-form-item class="form-item">
+                  <el-button class="form-item--btn" round @click="handleSubmit">
+                    <span>GỬI ĐI</span>
+                  </el-button>
+                </el-form-item>
+              </el-col>
+            </el-row>
+
+          </el-form>
+        </div>
+      </el-col>
+
+      <el-col class="contact__container--info" :span="6">
+        <div class="info-content">
+          <div class="info-content--add">
+            <div class="add-main">
+              <span class="add-main--title">Trụ sở chính:</span>
+              <span class="add-main--content">
+                Số 16, ngách 97/168 Kim Giang, tổ 30,
+                P. Đại Kim, Q. Hoàng Mai, Tp. Hà Nội.
+              </span>
+            </div>
+            <div class="add-represent">
+              <span class="add-represent--title">Văn phòng đại diện:</span>
+              <span class="add-represent--content">
+                Tòa nhà Hoàng Ngọc, số 4,ngõ 82 Dịch Vọng Hậu,
+                Cầu Giấy,Tp.  Hà Nội.
+              </span>
+            </div>
+          </div>
+          <div class="info-content--location">
+            <div class="location-content">
+              <div class="location-content-phone">
+                <span class="phone-title">Tel:</span>
+                <span class="phone-content"> +84 999 999 999</span>
+              </div>
+              <div class="location-content-mail">
+                <span class="mail-title">Email:</span>
+                <span class="mail-content"> kaiyouitcloud@gmail.com</span>
+              </div>
+            </div>
+            <div class="location-map">
+              <iframe
+                  class="location-map--content"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14896.287751637477!2d105.7850742!3d21.0298074!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abfa00d3ee37%3A0x6d5f9e5cd543116e!2z5rW35rSLSVQgLSBLYWl5b3VJVA!5e0!3m2!1svi!2s!4v1682310689059!5m2!1svi!2s"
+                  width="600"
+                  height="450"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </el-col>
+
+    </el-row>
+  </div>
+</div>

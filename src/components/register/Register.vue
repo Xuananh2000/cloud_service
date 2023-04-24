@@ -30,6 +30,10 @@ export default {
   methods: {
 
     init() {},
+
+    Submit(data) {
+      this.isSuccessed = data
+    },
   }
 }
 </script>

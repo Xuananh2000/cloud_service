@@ -9,6 +9,31 @@ export default {
   },
   data: function () {
     return {
+      form: {
+        name: '',
+        phone: '',
+        mail: '',
+        info: '',
+      },
+      value: '',
+      options: [
+        {
+          value: 'Option1',
+          label: 'Deploy ứng dụng'
+        },
+        {
+          value: 'Option2',
+          label: 'Giải pháp và Deploy AWS',
+        },
+        {
+          value: 'Option3',
+          label: 'Giải pháp và Deploy AZURE',
+        },
+        {
+          value: 'Option4',
+          label: 'Tùy chỉnh theo nhu cầu đặc biệt',
+        },
+      ]
     }
   },
 

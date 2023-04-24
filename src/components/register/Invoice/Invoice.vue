@@ -5,11 +5,10 @@
 
 export default {
   name: 'Invoice',
-  components: {
-
-  },
+  components: {},
   data: function () {
     return {
+      isSubmited: false,
       form: {
         name: '',
         phone: '',
@@ -50,6 +49,11 @@ export default {
   methods: {
 
     init() {},
+
+    handleSubmit() {
+      this.isSubmited = true
+      this.$emit('Submit', this.isSubmited)
+    },
   }
 }
 </script>

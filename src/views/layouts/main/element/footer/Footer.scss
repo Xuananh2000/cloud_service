@@ -79,6 +79,12 @@
             }
             .form-content {
               width: 404px;
+              ::v-deep(.el-input__wrapper) {
+                .el-input__inner {
+                  padding-right: 2em;
+                  align-self: center;
+                }
+              }
               &--item {
                 .form-input {
                   border-radius: 5px;
@@ -105,7 +111,11 @@
                 ::v-deep(.el-input__wrapper) {
                   align-items: unset;
                   .el-input__inner {
+                    padding: 1em 2em 1em 1em;
                   }
+                }
+                ::v-deep(.el-input__inner) {
+                  padding: 1em 2em 1em 1em;
                 }
                 .form-input {
                   height: 103px;

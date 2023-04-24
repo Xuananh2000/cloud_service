@@ -17,6 +17,7 @@
     "vue-cookies": "^1.8.3",
     "vue-lazyload": "^3.0.0-rc.2",
     "vue-lodash": "^2.1.2",
+    "vue-recaptcha": "^3.0.0-alpha.2",
     "vue-router": "^4.1.6",
     "vuex": "^4.1.0"
   },

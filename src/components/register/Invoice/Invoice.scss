@@ -1,23 +1,50 @@
 .invoice {
   &__container {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    justify-content: center;
+    display: grid;
     &-title {
-      .title-contnent {
+      margin: 0 0 4em 0;
+      .title-content {
+        display: flex;
+        justify-content: center;
         span {
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 58px;
+          letter-spacing: 0.05em;
+          color: #262626;
         }
       }
     }
 
     &-form {
+      width: 52em;
+      background: #FFFFFF;
+      box-shadow: 24px 21px 63px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
       .form-content {
+        padding: 3em 3em;
         &--information {
+          justify-content: space-between;
+          margin: 0 0 1em 0;
           .email-col {
             .form-item {
               &--title {
                 .form-title {
+                  font-weight: 700;
+                  font-size: 16px;
+                  line-height: 19px;
+                  letter-spacing: 0.05em;
+                  color: #0A91F2;
                 }
               }
 
               &--content {
+                ::v-deep(.el-input) {
+                  height: 3em;
+                }
                 .form-input {
                 }
               }
@@ -28,10 +55,18 @@
             .form-item {
               &--title {
                 .form-title {
+                  font-weight: 700;
+                  font-size: 16px;
+                  line-height: 19px;
+                  letter-spacing: 0.05em;
+                  color: #0A91F2;
                 }
               }
 
               &--content {
+                ::v-deep(.el-input) {
+                  height: 3em;
+                }
                 .form-input {
                 }
               }
@@ -40,15 +75,23 @@
         }
 
         &--description {
+          margin: 0 0 1em 0;
           .text-col {
             .form-item {
               &--title {
                 .form-title {
+                  font-weight: 700;
+                  font-size: 16px;
+                  line-height: 19px;
+                  letter-spacing: 0.05em;
+                  color: #0A91F2;
                 }
               }
 
               &--content {
                 .form-input {
+                  max-height: 12em;
+                  max-width: 100%;
                 }
               }
             }
@@ -56,10 +99,16 @@
         }
 
         &--service {
+          margin: 0 0 1em 0;
           .option-col {
             .form-item {
               &--title {
                 .form-title {
+                  font-weight: 700;
+                  font-size: 16px;
+                  line-height: 19px;
+                  letter-spacing: 0.05em;
+                  color: #0A91F2;
                 }
               }
 
@@ -78,6 +127,17 @@
           .btn-col {
             .form-item {
               &--btn {
+                width: 8em;
+                height: 4em;
+                background: #FF1D0D;
+                border-radius: 5px;
+                span {
+                  font-weight: 500;
+                  font-size: 14px;
+                  line-height: 17px;
+                  letter-spacing: 0.05em;
+                  color: #FFFFFF;
+                }
               }
             }
           }
@@ -85,4 +145,8 @@
       }
     }
   }
+}
+
+::v-deep(.el-form-item__content) {
+  display: grid;
 }

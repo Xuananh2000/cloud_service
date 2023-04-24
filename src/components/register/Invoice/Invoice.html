@@ -1,14 +1,14 @@
 <div class="invoice">
   <div class="invoice__container">
     <div class="invoice__container-title">
-      <div class="title-contnent">
+      <div class="title-content">
         <span>Hoàn tất đăng ký dịch vụ</span>
       </div>
     </div>
     <div class="invoice__container-form">
       <el-form :model="form" class="form-content">
         <el-row class="form-content--information">
-          <el-col class="email-col" :span="12">
+          <el-col class="email-col" :span="10">
             <el-form-item class="form-item">
               <div class="form-item--title">
                 <span class="form-title">Email của bạn</span>
@@ -18,7 +18,7 @@
               </div>
             </el-form-item>
           </el-col>
-          <el-col class="phone-col" :span="12">
+          <el-col class="phone-col" :span="10">
             <el-form-item class="form-item">
               <div class="form-item--title">
                 <span class="form-title">Số điện thoại của bạn</span>
@@ -38,7 +38,12 @@
                 <span class="form-title">Mô tả sơ qua về ứng dụng của bạn</span>
               </div>
               <div class="form-item--content">
-                <el-input v-model="form.mail" class="form-input" placeholder="Nhập nội dung"/>
+                <el-input
+                    v-model="form.mail"
+                    :rows="8"
+                    type="textarea"
+                    placeholder="Nhập nội dung"
+                />
               </div>
             </el-form-item>
           </el-col>
@@ -65,18 +70,8 @@
           <el-col class="verify-col" :span="12">
             <el-form-item class="form-content--item-customize">
               <div class="lang-content--list">
-                <div class="list-item--title">
-                  <span>Dịch vụ cần tham chiếu</span>
-                </div>
                 <div class="list-item">
-                  <el-select v-model="value" class="" placeholder="Thiết kế giải pháp">
-                    <el-option
-                        v-for="item in options"
-                        :key="item.value"
-                        :label="item.label"
-                        :value="item.value"
-                    />
-                  </el-select>
+                  Captcha Ở đây nha!
                 </div>
               </div>
             </el-form-item>
@@ -86,7 +81,9 @@
         <el-row class="form-content--btn">
           <el-col class="btn-col" :span="24">
             <el-form-item class="form-item">
-              <el-button class="form-item--btn" @click="">GỬI ĐI</el-button>
+              <el-button class="form-item--btn" round @click="handleSubmit">
+                <span>GỬI ĐI</span>
+              </el-button>
             </el-form-item>
           </el-col>
         </el-row>
